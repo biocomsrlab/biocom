@@ -19,7 +19,10 @@ export default function App() {
         <News />
         <section id="contact" className="mt-16">
           <h3 className="text-2xl font-semibold">Contact</h3>
-          <p className="mt-2 text-gray-600">Laboratory for Bioinformatics and Computational Medicine (BioCoM) — Department — University — Dhaka, Bangladesh</p>
+          <p className="mt-2 text-gray-600">Laboratory for Bioinformatics and Computational Medicine (BioCoM)
+            <br>Department of CSE — International Islamic University Chittagong— Kumira, Bangladesh
+            <br>Mobile: +8801815646105, Email: biocomsrlab@gmail.com
+              <br>PI email: saifurcubd@gmail.com; srahaman@iiuc.ac.bd; srahaman2-c@my.cityu.edu.hk</p>
         </section>
       </main>
       <Footer />
