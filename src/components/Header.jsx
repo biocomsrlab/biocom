@@ -7,8 +7,8 @@ export default function Header(){
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-md bg-gradient-to-tr from-green-600 to-blue-500 flex items-center justify-center text-white font-bold">BC</div>
           <div>
-            <h1 className="text-xl font-semibold">Laboratory for Bioinformatics and Computational Medicine (BioCoM)</h1>
-            <p className="text-sm text-gray-500">Dr. Saifur Rahman, PhD — Principal Investigator</p>
+            <h1 className="text-xl font-semibold">BioCoM-SRLab</h1>
+            <p className="text-sm text-gray-500"><bold>Engr. Saifur Rahman</bold> — Principal Investigator</p>
           </div>
         </div>
         <nav className="space-x-6 hidden md:block">
