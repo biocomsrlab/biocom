@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11"> 
-	<title>Gallery &#8211; BioCoM SR Lab</title>
+	<title>Fun &#8211; BioCoM SR Lab</title>
 <meta name='robots' content='max-image-preview:large' />
 <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
 <link href='https://fonts.googleapis.com/' rel='preconnect' />
@@ -16,273 +16,6 @@
 <link rel="alternate" type="application/rss+xml" title="BioCoM SR Lab &raquo; Comments Feed" href="../comments/feed/index.html" />
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../wp-json/oembed/1.0/embed3bf2.json?url=https%3A%2F%2Fwhwanglab.mgh.harvard.edu%2Ffun%2F" />
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embedaeaf?url=https%3A%2F%2Fwhwanglab.mgh.harvard.edu%2Ffun%2F&amp;format=xml" />
-
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        :root {
-            --primary-accent: #0f172a;       /* Obsidian Theme */
-            --secondary-accent: #2563eb;     /* Academic Blue */
-            --bg-canvas: #ffffff;
-            --border-subtle: #e2e8f0;
-            --text-muted: #64748b;
-            --font-stack: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: var(--font-stack);
-            background-color: var(--bg-canvas);
-            color: var(--primary-accent);
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
-
-        .gallery-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* --- Section Heading --- */
-        .section-heading {
-            margin-bottom: 2.5rem;
-            position: relative;
-        }
-
-        .section-heading h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary-accent);
-            letter-spacing: -0.5px;
-        }
-
-        .section-heading::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: var(--secondary-accent);
-            margin-top: 0.25rem;
-            border-radius: 2px;
-        }
-
-        /* --- Interactive Filter Bar --- */
-        .filter-controls {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-bottom: 2.5rem;
-            border-bottom: 1px solid var(--border-subtle);
-            padding-bottom: 1rem;
-        }
-
-        .filter-btn {
-            background: #f1f5f9;
-            border: 1px solid transparent;
-            color: var(--text-muted);
-            padding: 0.5rem 1.25rem;
-            font-size: 0.9rem;
-            font-weight: 500;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .filter-btn:hover {
-            background: #e2e8f0;
-            color: var(--primary-accent);
-        }
-
-        .filter-btn.active {
-            background: var(--secondary-accent);
-            color: #ffffff;
-            border-color: var(--secondary-accent);
-            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
-        }
-
-        /* --- Platform Independent Responsive Grid --- */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        /* --- Individual Photo Cards --- */
-        .gallery-item {
-            background: #ffffff;
-            border: 1px solid var(--border-subtle);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Hide items that don't match selected filter */
-        .gallery-item.hidden {
-            display: none;
-        }
-
-        .gallery-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 20px -5px rgba(0,0,0,0.08);
-            border-color: #cbd5e1;
-        }
-
-        .image-frame {
-            position: relative;
-            width: 100%;
-            padding-top: 66.67%; /* Fixed aspect ratio 3:2 to avoid layout shifts */
-            background-color: #f8fafc;
-            overflow: hidden;
-        }
-
-        .image-frame img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .gallery-item:hover .image-frame img {
-            transform: scale(1.05);
-        }
-
-        /* Hover Overlay for Visual Cue */
-        .image-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(15, 23, 42, 0.4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.2s ease;
-        }
-
-        .gallery-item:hover .image-overlay {
-            opacity: 1;
-        }
-
-        .image-overlay i {
-            color: #ffffff;
-            font-size: 1.5rem;
-            background: rgba(255,255,255,0.2);
-            padding: 0.75rem;
-            border-radius: 50%;
-            backdrop-filter: blur(4px);
-        }
-
-        .item-details {
-            padding: 1rem;
-            flex-grow: 1;
-        }
-
-        .item-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--primary-accent);
-            margin-bottom: 0.25rem;
-        }
-
-        .item-meta {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            display: flex;
-            justify-content: space-between;
-        }
-
-        /* --- Native Lightbox Modal Overlay --- */
-        .lightbox-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(8px);
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-            padding: 2rem;
-        }
-
-        .lightbox-modal.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .lightbox-content {
-            max-width: 90%;
-            max-height: 75vh;
-            border-radius: 8px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-
-        .lightbox-caption {
-            color: #ffffff;
-            margin-top: 1rem;
-            font-size: 1.1rem;
-            text-align: center;
-            max-width: 600px;
-        }
-
-        .lightbox-close-btn {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            background: none;
-            border: none;
-            color: #ffffff;
-            font-size: 2rem;
-            cursor: pointer;
-            opacity: 0.7;
-            transition: opacity 0.2s;
-        }
-
-        .lightbox-close-btn:hover {
-            opacity: 1;
-        }
-
-        /* --- Mobile Adaptations --- */
-        @media (max-width: 640px) {
-            .filter-controls {
-                gap: 0.5rem;
-            }
-            .filter-btn {
-                padding: 0.4rem 1rem;
-                font-size: 0.8rem;
-            }
-            .gallery-grid {
-                grid-template-columns: 1fr; /* Stack vertically on small phones */
-            }
-        }
-    </style>
-
-
-
-
-
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
@@ -389,7 +122,7 @@ class="hfeed site" id="page">
 																								<div class="site-header-primary-section-right site-header-section ast-flex ast-grid-right-section">
 										<div class="ast-builder-menu-1 ast-builder-menu ast-flex ast-builder-menu-1-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-hb-menu-1">
 			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="primary-site-navigation-desktop" aria-label="Primary Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation ast-inline-flex"><ul id="ast-hf-menu-1" class="main-header-menu ast-menu-shadow ast-nav-menu ast-flex  submenu-with-border stack-on-mobile"><li id="menu-item-1735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1735"><a href="../research/index.html" class="menu-link">Research</a></li>
-<li id="menu-item-1733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1733"><a href="../publications/index.html" class="menu-link">Publications</a></li>
+<li id="menu-item-1733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1733"><a href="../publications/index.html" class="menu-link">Publications / Patents</a></li>
 <li id="menu-item-2087" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2087"><a aria-expanded="false" href="../team/index.html" class="menu-link">Team<span role="button" class="dropdown-menu-toggle ast-header-navigation-arrow" tabindex="0" aria-expanded="false" aria-label="Menu Toggle" aria-haspopup="true"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
                 </svg></span></span></a><button class="ast-menu-toggle" aria-expanded="false" aria-label="Toggle Menu"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
@@ -401,15 +134,10 @@ class="hfeed site" id="page">
                 </svg></span>Openings</a></li>
 </ul>
 </li>
-<li id="menu-item-3079" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3076 current_page_item menu-item-3079"><a href="index.html" aria-current="page" class="menu-link">Galary</a></li>
+<li id="menu-item-3079" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3076 current_page_item menu-item-3079"><a href="index.html" aria-current="page" class="menu-link">Fun</a></li>
 <li id="menu-item-1828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1828"><a href="../news/index.html" class="menu-link">News</a></li>
-<li id="menu-item-2769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2769"><a href="../funding-donate/index.html" class="menu-link">Funding</a></li>
+<li id="menu-item-2769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2769"><a href="../funding-donate/index.html" class="menu-link">Funding / Donate</a></li>
 <li id="menu-item-1755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1755"><a href="../contact-2/index.html" class="menu-link">Contact</a></li>
-
-
-<li id="menu-item-1754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1754"><a href="../team/openings/index.html" class="menu-link">Openings</a></li>
-
-
 </ul></div></nav></div></div>		</div>
 									</div>
 												</div>
