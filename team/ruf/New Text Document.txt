@@ -1,0 +1,40 @@
+<div class="team-layout-grid">
+            <script>
+                // Excel/Text File Data translated into a structured JavaScript array
+                const undergraduateData = [
+                    { name: "Alex Morgan", degree: "B.Sc. Bioinformatics", university: "Harvard University", id: "UG-2026-01", email: "amorgan@fas.harvard.edu", info: "Working on cell-free DNA (cfDNA) mutation filtering algorithms." },
+                    { name: "Benjamin Chen", degree: "B.Sc. Computer Science", university: "MIT", id: "UG-2026-02", email: "bchen@mit.edu", info: "Developing deep learning architectures for spatial transcriptomics mapping." },
+                    { name: "Chloe Smith", degree: "B.Sc. Biomedical Engineering", university: "Boston University", id: "UG-2026-03", email: "csmith@bu.edu", info: "Optimizing microfluidic data inputs for liquid biopsy pipelines." },
+                    { name: "Daniel Kim", degree: "B.Sc. Data Science", university: "Northeastern University", id: "UG-2026-04", email: "d.kim@northeastern.edu", info: "Implementing explainable AI frameworks for oncology diagnostics." },
+                    { name: "Elena Rostova", degree: "B.Sc. Computational Biology", university: "Harvard University", id: "UG-2026-05", email: "erostova@fas.harvard.edu", info: "Analyzing multi-omics sequencing datasets for early cancer detection." },
+                    { name: "Fahad Al-Mansoor", degree: "B.Sc. Software Engineering", university: "MIT", id: "UG-2026-06", email: "fahad@mit.edu", info: "Building web-based visualization dashboards for tumor ecosystems." },
+                    { name: "Grace Hopper V", degree: "B.Sc. Computer Science", university: "Tufts University", id: "UG-2026-07", email: "ghopper@tufts.edu", info: "Testing algorithmic scalability on large-scale single-cell RNA datasets." },
+                    { name: "Hassan Ali", degree: "B.Sc. Bioinformatics", university: "Boston University", id: "UG-2026-08", email: "hali@bu.edu", info: "Investigating drug resistance mechanisms using network topology modeling." },
+                    { name: "Isabella Rossi", degree: "B.Sc. Molecular Biology", university: "Harvard University", id: "UG-2026-09", email: "i_rossi@harvard.edu", info: "Validating computational drug response predictions in cell lines." },
+                    { name: "James Wilson", degree: "B.Sc. Statistics", university: "Northeastern University", id: "UG-2026-10", email: "j.wilson@neu.edu", info: "Applying survival analysis models to spatial transcriptomic tumor markers." },
+                    { name: "Kavitha Patel", degree: "B.Sc. Biomedical Engineering", university: "MIT", id: "UG-2026-11", email: "kpatel@mit.edu", info: "Modeling structural drug-target interactions for precision oncology." },
+                    { name: "Lucas Vance", degree: "B.Sc. Computational Biology", university: "Brown University", id: "UG-2026-12", email: "lucas_vance@brown.edu", info: "Integrating multi-modal data matrices for comprehensive healthcare analytics." }
+                ];
+
+                // Loop through the data array to build exactly 12 tailored profile cards
+                undergraduateData.forEach((student, index) => {
+                    const imgNumber = index + 1; // Matches us1.jpg to us12.jpg
+                    document.write(`
+                        <div class="member-profile-card">
+                            <div class="profile-avatar-frame">
+                                <img src="us${imgNumber}.jpg" alt="${student.name}" onerror="this.src='https://via.placeholder.com/150/f1f5f9/64748b?text=US${imgNumber}'">
+                            </div>
+                            <div class="member-name">${student.name}</div>
+                            <div class="member-role" style="font-size: 0.8rem; margin-bottom: 0.25rem;">${student.degree}</div>
+                            <div style="font-size: 0.82rem; font-weight: 600; color: #475569; margin-bottom: 0.25rem;">${student.university}</div>
+                            <div style="font-size: 0.75rem; color: #94a3b8; margin-bottom: 0.75rem;">ID: ${student.id}</div>
+                            <div class="member-meta-description">${student.info}</div>
+                            <div class="member-connect-links">
+                                <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="mailto:${student.email}" title="${student.email}"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    `);
+                });
+            </script>
+        </div>
