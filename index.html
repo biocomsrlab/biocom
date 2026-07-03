@@ -4,6 +4,82 @@
 <!-- Mirrored from whwanglab.mgh.harvard.edu/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Jul 2026 18:19:10 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* --- The Screen-Independent Header Container --- */
+        .hero-header {
+            width: 100%;
+            height: 60vh; /* Takes up exactly 60% of the visible screen height */
+            min-height: 300px; /* Prevents the header from getting too squished on small phones */
+            
+            /* Point this to your actual header image filename */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('header-bg.jpg');
+            
+            /* Core Positioning Magic */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            /* Center alignment for any overlaying text */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            padding: 0 1rem;
+        }
+
+        .hero-header h1 {
+            font-size: clamp(1.8rem, 5vw, 3.5rem); /* Dynamically scales font based on screen width */
+            font-family: sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-header p {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-family: sans-serif;
+            opacity: 0.9;
+        }
+    </style>
+	
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* --- Pure CSS Screen-Independent Wrapper Container --- */
+        .lab-header-banner {
+            width: 100%;
+            background-color: #ffffff; /* Clean white canvas background */
+            padding: 1.5rem 1rem;       /* Adds padding around the banner on all screen sizes */
+            display: flex;
+            justify-content: center;   /* Perfectly centers the image horizontally on PCs */
+            align-items: center;
+            border-bottom: 1px solid #e2e8f0; /* Optional: subtle dividing line below the header */
+        }
+
+        /* --- Dynamic Banner Scaler Rules --- */
+        .lab-header-banner img {
+            width: 100%;               /* Spans full container width on small screens */
+            max-width: 1024px;         /* Forces the image to lock exactly at 1024px on wide PC screens */
+            height: auto;              /* Crucial: automatically scales the height to prevent distortion */
+            display: block;            /* Clears default inline rendering gaps */
+            object-fit: contain;       /* Keeps entire structural logo context visible */
+        }
+    </style>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11"> 
@@ -221,7 +297,18 @@ class="post-1355 page type-page status-publish ast-article-single" id="post-1355
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-8228086 elementor-widget elementor-widget-image" data-id="8228086" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img fetchpriority="high" decoding="async" width="1024" height="135" src="biocom.png" class="attachment-large size-large wp-image-3085" alt="" srcset="biocom-1024x135.png 1024w, biocom-300x40.png 300w, biocom-768x101.png 768w, biocom-1536x203.png 1536w, biocom.png 1862w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
+				
+				
+				
+				<header class="lab-header-banner">
+						<img src="biocom.png" 
+							 width="1024" 
+							 height="135" 
+							 alt="BioCoM SR Lab Research Group Logo" 
+							 onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1024&quot; height=&quot;135&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23f1f5f9&quot;/><text x=&quot;50%&quot; y=&quot;55%&quot; font-family=&quot;sans-serif&quot; font-size=&quot;20&quot; fill=&quot;%2364748b&quot; dominant-baseline=&quot;middle&quot; text-anchor=&quot;middle&quot;&gt;BioCoM SR Lab Banner Placeholder&lt;/text&gt;</svg>';">
+					</header>
+				
+																														</div>
 															
 				</div>
 				<div class="elementor-element elementor-element-5d07c84 elementor-widget elementor-widget-heading" data-id="5d07c84" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
@@ -280,13 +367,14 @@ class="post-1355 page type-page status-publish ast-article-single" id="post-1355
 		<div class="elementor-element elementor-element-db6c41c e-con-full e-flex e-con e-child" data-id="db6c41c" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-5a43bad elementor-widget elementor-widget-image" data-id="5a43bad" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="2460" height="2560" src="wp-content/uploads/2025/05/5-c-scaled-1.jpg" class="attachment-full size-full wp-image-3086" alt="" srcset="wp-content/uploads/2025/05/5-c-scaled-1.jpeg 2460w, wp-content/uploads/2025/05/5-c-scaled-1-288x300.jpeg 288w, wp-content/uploads/2025/05/5-c-scaled-1-984x1024.jpeg 984w, wp-content/uploads/2025/05/5-c-scaled-1-768x799.jpeg 768w, wp-content/uploads/2025/05/5-c-scaled-1.jpg 1476w, wp-content/uploads/2025/05/5-c-scaled-1.jpg 1968w" sizes="(max-width: 2460px) 100vw, 2460px" />															</div>
+															<img decoding="async" width="2460" height="2560" src="wp-content/uploads/2025/05/5-c-scaled-1.jpg" class="attachment-full size-full wp-image-3086" alt="" srcset="wp-content/uploads/2025/05/5-c-scaled-1.jpg 2460w, wp-content/uploads/2025/05/5-c-scaled-1.jpg 288w, wp-content/uploads/2025/05/5-c-scaled-1.jpg 984w, wp-content/uploads/2025/05/5-c-scaled-1.jpg 768w, wp-content/uploads/2025/05/5-c-scaled-1.jpg 1476w, wp-content/uploads/2025/05/5-c-scaled-1.jpg 1968w" sizes="(max-width: 2460px) 100vw, 2460px" />															</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-731de35 e-con-full e-flex e-con e-child" data-id="731de35" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-0dc8612 elementor-widget elementor-widget-image" data-id="0dc8612" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="2560" height="1909" src="footer.jpg" class="attachment-full size-full wp-image-3087" alt="" srcset="footer.jpeg 2560w, footer-300x224.jpeg 300w, footer-1024x764.jpeg 1024w, footer-768x573.jpeg 768w, footer-1536x1145.jpeg 1536w, footer-2048x1527.jpeg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" />															</div>
+				
+															<img decoding="async" width="2460" height="2560" src="mgh.jpg" class="attachment-full size-full wp-image-3086" alt="" srcset="mgh.jpg 2460w, mgh.jpg 288w, mgh.jpg 984w, mgh.jpg 768w, mgh.jpg 1476w, mgh.jpg 1968w" sizes="(max-width: 2460px) 100vw, 2460px" />															</div>
 				</div>
 				</div>
 		
@@ -324,7 +412,7 @@ class="post-1355 page type-page status-publish ast-article-single" id="post-1355
 		<div class="elementor-element elementor-element-a36660b e-con-full e-flex e-con e-child" data-id="a36660b" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-92832e5 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="92832e5" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="200" height="400" src="wp-content/uploads/2025/05/cbm_journal.jpg.png" class="attachment-full size-full wp-image-3356" alt="" srcset="wp-content/uploads/2025/05/cbm_journal.jpg 1744w, wp-content/uploads/2025/05/cbm_journal.jpg 300w, wp-content/uploads/2025/10/cbm_journal.jpg 1024w, wp-content/uploads/2025/05/cbm_journal.jpg 768w, wp-content/uploads/2025/05/cbm_journal.jpg 1536w" sizes="(max-width: 1744px) 100vw, 1744px" />															</div>
+															<img loading="lazy" decoding="async" width="200" height="400" src="cibm.jpg" class="attachment-full size-full wp-image-3356" alt="" srcset="cibm.jpg 1744w, cibm.jpg 300w, cibm.jpg 1024w, cibm.jpg 768w, cibm.jpg 1536w" sizes="(max-width: 1744px) 100vw, 1744px" />															</div>
 				</div>
 				</div>
 					</div>
@@ -370,7 +458,7 @@ class="post-1355 page type-page status-publish ast-article-single" id="post-1355
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-880714f elementor-widget elementor-widget-image" data-id="880714f" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="1200" height="100" src="wp-content/uploads/2025/05/footer.jpg 300w, wp-content/uploads/2025/05/footer.png" class="attachment-large size-large wp-image-3097" alt="" srcset="wp-content/uploads/2025/05/footer.png 1024w,  768w, wp-content/uploads/2025/05/footer.png 1536w, wp-content/uploads/2025/05/footer.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
+															<img loading="lazy" decoding="async" width="1200" height="100" src="footer.jpg" class="attachment-large size-large wp-image-3097" alt="" srcset="footer.jpg 1024w,  footer.jpg 768w, footer.jpg 1536w, footer.jpg 2048w, footer.jpg 300w," sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
 				</div>
 					</div>
 				</div>
