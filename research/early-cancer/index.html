@@ -281,6 +281,235 @@ class="post-1872 page type-page status-publish ast-article-single" id="post-1872
 	
 </div><!-- .entry-content .clear -->
 
+
+
+
+
+
+
+
+
+<style>
+            .projects-section-header {
+                margin: 5rem 0 2rem 0;
+                border-bottom: 2px solid var(--border-subtle, #e2e8f0);
+                padding-bottom: 0.75rem;
+            }
+
+            .projects-section-header h2 {
+                font-size: 1.85rem;
+                font-weight: 700;
+                color: var(--primary-accent, #0f172a);
+                letter-spacing: -0.5px;
+            }
+
+            .projects-list-container {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                margin-bottom: 5rem;
+            }
+
+            /* --- Screen-Independent Project Card --- */
+            .project-list-card {
+                background: var(--bg-card, #ffffff);
+                border: 1px solid var(--border-subtle, #e2e8f0);
+                border-radius: 12px;
+                padding: 1.75rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                transition: all 0.25s ease;
+            }
+
+            .project-list-card:hover {
+                transform: translateX(4px);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+                border-color: #cbd5e1;
+            }
+
+            /* --- Upper Metadata Flex Row --- */
+            .project-meta-top {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                gap: 0.75rem;
+            }
+
+            .project-badge-group {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                flex-wrap: wrap;
+            }
+
+            .project-id-badge {
+                font-size: 0.75rem;
+                font-weight: 700;
+                background: #f1f5f9;
+                color: #334155;
+                padding: 0.3rem 0.75rem;
+                border-radius: 6px;
+                border: 1px solid #cbd5e1;
+                letter-spacing: 0.5px;
+            }
+
+            /* Category Tag Colors matching the Core Lab Pillars */
+            .category-tag {
+                font-size: 0.72rem;
+                font-weight: 600;
+                padding: 0.3rem 0.75rem;
+                border-radius: 6px;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+            }
+            .cat-ai { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }      /* AI in Medicine */
+            .cat-omics { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }   /* Tumor Microenvironment / Single-Cell */
+            .cat-oncology { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }/* Computational Oncology */
+            .cat-bioinf { background: #dcfce7; color: #166534; border: 1px solid #86efac; }  /* Bioinformatics & Networks */
+
+            .project-duration {
+                font-size: 0.82rem;
+                color: #64748b;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: 0.4rem;
+            }
+
+            /* --- Title Style --- */
+            .project-title-text {
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: var(--primary-accent, #0f172a);
+                line-height: 1.4;
+            }
+
+            /* --- Lower Details Layout --- */
+            .project-meta-bottom {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                padding-top: 0.75rem;
+                border-top: 1px dashed #e2e8f0;
+                font-size: 0.85rem;
+                color: #475569;
+            }
+
+            .meta-label {
+                font-weight: 600;
+                color: var(--secondary-accent, #2563eb);
+            }
+
+            /* --- Responsive Mobile Overrides --- */
+            @media (max-width: 640px) {
+                .project-list-card {
+                    padding: 1.25rem;
+                }
+                .project-title-text {
+                    font-size: 1.05rem;
+                }
+                .project-meta-bottom {
+                    flex-direction: column;
+                    gap: 0.4rem;
+                }
+            }
+        </style>
+
+        <div class="projects-section-header">
+            <h2>Ongoing Lab Projects</h2>
+        </div>
+
+        <div class="projects-list-container">
+            <script>
+                // Your exact lab records dynamically categorized under the core pillars
+                const bioComProjects = [
+                    {
+                        id: "BioCoM-P1",
+                        title: "ENSymBRLNet: An Explainable Neuro-Symbolic Belief Representation Learning Network for Interpretable Early Cancer Detection from Multi-Modal Liquid Biopsy Data",
+                        category: "Artificial Intelligence and Computational Intelligence in Medicine",
+                        catClass: "cat-ai",
+                        leader: "PI Saifur Rahaman",
+                        supervisor: "",
+                        duration: "Jan 2026 - July 2026"
+                    },
+                    {
+                        id: "BioCoM-P2",
+                        title: "TOGA-CL: Tissue-of-Origin Guided Analysis via Cross-Modal Integration of cfRNA and cfDNA Fragmentome Signatures Using Contrastive Learning for Sensitive Early Cancer Detection",
+                        category: "Bioinformatics and Computational Biology",
+                        catClass: "cat-bioinf",
+                        leader: "PI Saifur Rahaman",
+                        supervisor: "",
+                        duration: "Ongoing"
+                    },
+                    {
+                        id: "BioCoM-P3",
+                        title: "EarlyCancerDMLF: Hybrid DEG–machine learning framework for early cancer detection using single-cell RNA Transcriptomics",
+                        category: "Tumor Microenvironment, Single-Cell and Spatial Omics",
+                        catClass: "cat-omics",
+                        leader: "PI Saifur Rahaman",
+                        supervisor: "",
+                        duration: "July 2026 - Present"
+                    },
+                    {
+                        id: "BioCoM-P6",
+                        title: "MultimodalEarlyCancerDetection",
+                        category: "Artificial Intelligence and Computational Intelligence in Medicine",
+                        catClass: "cat-ai",
+                        leader: "PI Saifur Rahaman",
+                        supervisor: "",
+                        duration: "July 2026 - Present"
+                    },
+                    {
+                        id: "BioCoM-P8",
+                        title: "PanCancer-BRL: A Foundation Framework for Learning Universal Biological Signatures for Early Cancer Detection from Heterogeneous Multimodal Liquid Biopsy Cohorts",
+                        category: "Bioinformatics and Computational Biology",
+                        catClass: "cat-bioinf",
+                        leader: "PI Saifur Rahaman",
+                        supervisor: "",
+                        duration: "July 2026 - Present"
+                    }
+                ];
+
+                // Loop execution logic mapping information elements into structural list elements
+                bioComProjects.forEach(project => {
+                    const supervisorElement = project.supervisor 
+                        ? `<div><span class="meta-label">Supervisor:</span> ${project.supervisor}</div>` 
+                        : '';
+
+                    document.write(`
+                        <div class="project-list-card">
+                            <div class="project-meta-top">
+                                <div class="project-badge-group">
+                                    <span class="project-id-badge">${project.id}</span>
+                                    <span class="category-tag ${project.catClass}">${project.category}</span>
+                                </div>
+                                <div class="project-duration">
+                                    <i class="fa-regular fa-calendar-days"></i> ${project.duration}
+                                </div>
+                            </div>
+                            <h3 class="project-title-text">${project.title}</h3>
+                            <div class="project-meta-bottom">
+                                <div><span class="meta-label">Project Leader:</span> ${project.leader}</div>
+                                ${supervisorElement}
+                            </div>
+                        </div>
+                    `);
+                });
+            </script>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 </article><!-- #post-## -->
