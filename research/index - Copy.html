@@ -295,13 +295,7 @@ class="post-1725 page type-page status-publish ast-article-single" id="post-1725
 
 
 
-
-
-
-
-
-<!-- ==================== ONGOING LAB PROJECTS SECTION ==================== -->
-        <style>
+<style>
             .projects-section-header {
                 margin: 5rem 0 2rem 0;
                 border-bottom: 2px solid var(--border-subtle, #e2e8f0);
@@ -376,10 +370,10 @@ class="post-1725 page type-page status-publish ast-article-single" id="post-1725
                 text-transform: uppercase;
                 letter-spacing: 0.3px;
             }
-            .cat-ai { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
-            .cat-omics { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
-            .cat-oncology { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
-            .cat-bioinf { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+            .cat-ai { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }      /* AI in Medicine */
+            .cat-omics { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }   /* Tumor Microenvironment / Single-Cell */
+            .cat-oncology { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }/* Computational Oncology */
+            .cat-bioinf { background: #dcfce7; color: #166534; border: 1px solid #86efac; }  /* Bioinformatics & Networks */
 
             .project-duration {
                 font-size: 0.82rem;
@@ -390,27 +384,12 @@ class="post-1725 page type-page status-publish ast-article-single" id="post-1725
                 gap: 0.4rem;
             }
 
-            /* --- Titles and Descriptions --- */
-            .project-short-title {
-                font-size: 1.3rem;
-                font-weight: 700;
-                color: var(--secondary-accent, #2563eb);
-                margin-bottom: 0.4rem;
-            }
-
-            .project-description-text {
-                font-size: 0.88rem;
-                color: #334155;
-                line-height: 1.6;
-                background: #f8fafc;
-                padding: 1rem;
-                border-left: 3px solid #cbd5e1;
-                border-radius: 0 8px 8px 0;
-            }
-
-            .contact-notice {
+            /* --- Title Style --- */
+            .project-title-text {
+                font-size: 1.25rem;
                 font-weight: 600;
-                color: #b91c1c;
+                color: var(--primary-accent, #0f172a);
+                line-height: 1.4;
             }
 
             /* --- Lower Details Layout --- */
@@ -426,7 +405,7 @@ class="post-1725 page type-page status-publish ast-article-single" id="post-1725
 
             .meta-label {
                 font-weight: 600;
-                color: var(--primary-accent, #0f172a);
+                color: var(--secondary-accent, #2563eb);
             }
 
             /* --- Responsive Mobile Overrides --- */
@@ -434,8 +413,8 @@ class="post-1725 page type-page status-publish ast-article-single" id="post-1725
                 .project-list-card {
                     padding: 1.25rem;
                 }
-                .project-short-title {
-                    font-size: 1.15rem;
+                .project-title-text {
+                    font-size: 1.05rem;
                 }
                 .project-meta-bottom {
                     flex-direction: column;
@@ -450,89 +429,83 @@ class="post-1725 page type-page status-publish ast-article-single" id="post-1725
 
         <div class="projects-list-container">
             <script>
+                // Your exact lab records dynamically categorized under the core pillars
                 const bioComProjects = [
                     {
                         id: "BioCoM-P1",
-                        shortTitle: "ENSymBRLNet Framework",
+                        title: "ENSymBRLNet: An Explainable Neuro-Symbolic Belief Representation Learning Network for Interpretable Early Cancer Detection from Multi-Modal Liquid Biopsy Data",
                         category: "Artificial Intelligence and Computational Intelligence in Medicine",
                         catClass: "cat-ai",
-                        description: "This project explores explainable computational intelligence frameworks applied to multi-modal liquid biopsy data channels. For deeper technical insights or collaboration parameters, please contact the PI directly.",
                         leader: "PI Saifur Rahaman",
                         supervisor: "",
                         duration: "Jan 2026 - July 2026"
                     },
                     {
                         id: "BioCoM-P2",
-                        shortTitle: "TOGA-CL Framework",
+                        title: "TOGA-CL: Tissue-of-Origin Guided Analysis via Cross-Modal Integration of cfRNA and cfDNA Fragmentome Signatures Using Contrastive Learning for Sensitive Early Cancer Detection",
                         category: "Bioinformatics and Computational Biology",
                         catClass: "cat-bioinf",
-                        description: "Investigating the architectural integration of cell-free genomic and transcriptomic fragmentome signatures via contrastive algorithmic frameworks. Specific project models and diagnostic conclusions are confidential; contact the PI for details.",
                         leader: "PI Saifur Rahaman",
                         supervisor: "",
                         duration: "Ongoing"
                     },
                     {
                         id: "BioCoM-P3",
-                        shortTitle: "EarlyCancerDMLF Framework",
+                        title: "EarlyCancerDMLF: Hybrid DEG–machine learning framework for early cancer detection using single-cell RNA Transcriptomics",
                         category: "Tumor Microenvironment, Single-Cell and Spatial Omics",
                         catClass: "cat-omics",
-                        description: "Focusing on the statistical implementation of hybrid machine learning pipelines processing single-cell transcriptomic data blocks. To protect current intellectual data, specific findings are withheld; contact the PI for inquiries.",
                         leader: "PI Saifur Rahaman",
                         supervisor: "",
                         duration: "July 2026 - Present"
                     },
                     {
                         id: "BioCoM-P4",
-                        shortTitle: "Spatial Image and scRNA Analysis [MGH Dataset]",
+                        title: "CancerCellDetection_Using_Spatial_image_and_scRNA_transcriptomics [MGH_dataset]",
                         category: "Tumor Microenvironment, Single-Cell and Spatial Omics",
                         catClass: "cat-omics",
-                        description: "An evaluation of data-processing methods for combining high-resolution spatial image sets alongside single-cell sequencing matrices. Full experimental configurations require authorization; kindly reach out to the PI.",
                         leader: "Nujmus Sajid (Lab Manager)",
                         supervisor: "PI Saifur Rahaman",
                         duration: "July 2026 - Present"
                     },
                     {
                         id: "BioCoM-P5",
-                        shortTitle: "Cross-Domain Multimodal Modeling",
+                        title: "Cross Domain multimodal anticancer drug combination response prediction",
                         category: "Computational Oncology and Therapeutic Drug Response",
                         catClass: "cat-oncology",
-                        description: "A computational engineering baseline project analyzing cross-domain modeling strategies for multi-agent anticancer therapeutics. Core algorithmic pipelines and predictive results are restricted; contact the PI for information.",
                         leader: "Undergraduate Students",
                         supervisor: "PI Saifur Rahaman",
                         duration: "Ongoing"
                     },
                     {
                         id: "BioCoM-P6",
-                        shortTitle: "Multimodal Early Detection Pipeline",
+                        title: "MultimodalEarlyCancerDetection",
                         category: "Artificial Intelligence and Computational Intelligence in Medicine",
                         catClass: "cat-ai",
-                        description: "Developing robust computational frameworks designed to harmonize heterogeneous multimodal analytical inputs. Detailed systemic methodologies and performance criteria are private; contact the PI for a deep-dive review.",
                         leader: "PI Saifur Rahaman",
                         supervisor: "",
                         duration: "July 2026 - Present"
                     },
                     {
                         id: "BioCoM-P7",
-                        shortTitle: "Spatial Single-Cell Informatics Review",
+                        title: "Computational oncology informatics for Cancer micro-environmental spatial single cell RNA transcriptomics: a systematic review",
                         category: "Computational Oncology and Therapeutic Drug Response",
                         catClass: "cat-oncology",
-                        description: "A comprehensive systematic review compiling current international methodologies regarding spatial transcriptomic indexing workflows for tumor ecosystems. For literature taxonomy details, coordinate directly with the PI.",
                         leader: "PI Saifur Rahaman",
                         supervisor: "",
                         duration: "July 2026 - Present"
                     },
                     {
                         id: "BioCoM-P8",
-                        shortTitle: "PanCancer-BRL Framework",
+                        title: "PanCancer-BRL: A Foundation Framework for Learning Universal Biological Signatures for Early Cancer Detection from Heterogeneous Multimodal Liquid Biopsy Cohorts",
                         category: "Bioinformatics and Computational Biology",
                         catClass: "cat-bioinf",
-                        description: "Researching large-scale foundation layout concepts to safely normalize global molecular traits from highly fragmented cohorts. The structural design framework remains under disclosure guard; contact the PI for verified inquiries.",
                         leader: "PI Saifur Rahaman",
                         supervisor: "",
                         duration: "July 2026 - Present"
                     }
                 ];
 
+                // Loop execution logic mapping information elements into structural list elements
                 bioComProjects.forEach(project => {
                     const supervisorElement = project.supervisor 
                         ? `<div><span class="meta-label">Supervisor:</span> ${project.supervisor}</div>` 
@@ -549,12 +522,7 @@ class="post-1725 page type-page status-publish ast-article-single" id="post-1725
                                     <i class="fa-regular fa-calendar-days"></i> ${project.duration}
                                 </div>
                             </div>
-                            <div>
-                                <h3 class="project-short-title">${project.shortTitle}</h3>
-                                <p class="project-description-text">
-                                    ${project.description} <span class="contact-notice">Please contact the PI for full details.</span>
-                                </p>
-                            </div>
+                            <h3 class="project-title-text">${project.title}</h3>
                             <div class="project-meta-bottom">
                                 <div><span class="meta-label">Project Leader:</span> ${project.leader}</div>
                                 ${supervisorElement}
@@ -564,144 +532,7 @@ class="post-1725 page type-page status-publish ast-article-single" id="post-1725
                 });
             </script>
         </div>
-		
-		
-		
-		
-		
-		
-		<!-- ==================== COLLABORATION & CALL FOR PROPOSALS ==================== -->
-        <style>
-            .collaboration-container {
-                background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-                border: 1px solid #e2e8f0;
-                border-radius: 16px;
-                padding: 2.5rem;
-                margin-top: 4rem;
-                margin-bottom: 5rem;
-                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            }
 
-            .collaboration-content {
-                max-width: 800px;
-                margin: 0 auto;
-                text-align: center;
-            }
-
-            .collaboration-icon {
-                font-size: 2.5rem;
-                color: var(--secondary-accent, #2563eb);
-                margin-bottom: 1rem;
-            }
-
-            .collaboration-content h3 {
-                font-size: 1.6rem;
-                font-weight: 700;
-                color: var(--primary-accent, #0f172a);
-                margin-bottom: 1rem;
-                letter-spacing: -0.3px;
-            }
-
-            .collaboration-content p {
-                font-size: 0.95rem;
-                color: #475569;
-                line-height: 1.7;
-                margin-bottom: 1.5rem;
-            }
-
-            .pillar-list-inline {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 0.5rem;
-                margin: 1.5rem 0;
-            }
-
-            .pillar-pill {
-                background: #ffffff;
-                border: 1px solid #cbd5e1;
-                padding: 0.4rem 0.8rem;
-                border-radius: 8px;
-                font-size: 0.82rem;
-                font-weight: 500;
-                color: #334155;
-            }
-
-            /* --- Interactive Dynamic Action Button --- */
-            .proposal-btn {
-                display: inline-flex;
-                align-items: center;
-                gap: 0.5rem;
-                background: var(--secondary-accent, #2563eb);
-                color: #ffffff !important;
-                text-decoration: none !important;
-                font-weight: 600;
-                font-size: 0.95rem;
-                padding: 0.75rem 2rem;
-                border-radius: 8px;
-                box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-                transition: all 0.2s ease;
-            }
-
-            .proposal-btn:hover {
-                background: #1d4ed8;
-                transform: translateY(-2px);
-                box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
-            }
-
-            /* --- Responsive Adjustments --- */
-            @media (max-width: 640px) {
-                .collaboration-container {
-                    padding: 1.75rem 1.2rem;
-                    margin-top: 2.5rem;
-                }
-                .collaboration-content h3 {
-                    font-size: 1.35rem;
-                }
-                .collaboration-content p {
-                    font-size: 0.88rem;
-                }
-                .proposal-btn {
-                    width: 100%;
-                    justify-content: center;
-                }
-            }
-        </style>
-
-        <div class="collaboration-container">
-            <div class="collaboration-content">
-                <div class="collaboration-icon">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
-                <h3>Join Our Research Journey</h3>
-                <p>
-                    The <strong>BioCoM SR Lab</strong> is continuously seeking highly motivated prospective researchers, 
-                    postgraduate/undergraduate students, and global institutional collaborators to push the boundaries of computational medicine. 
-                    If you are interested in contributing to any of our active <strong>BioCoM pipelines</strong>, or if you possess an independent, 
-                    novel project proposal aligned with our five primary research pillars, we welcome your initiative.
-                </p>
-                
-                <p style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #64748b; margin-bottom: 0.5rem;">
-                    Core Alignment Core Domains
-                </p>
-                <div class="pillar-list-inline">
-                    <span class="pillar-pill">AI & Computational Intelligence</span>
-                    <span class="pillar-pill">Tumor Microenvironment & Spatial Omics</span>
-                    <span class="pillar-pill">Computational Oncology</span>
-                    <span class="pillar-pill">Bioinformatics & Computational Biology</span>
-                    <span class="pillar-pill">Health Informatics</span>
-                </div>
-
-                <p style="margin-top: 1.5rem;">
-                    Please prepare a brief summary statement or project brief outlining your background, specific research goals, and intended pipeline alignment, and submit your proposal directly to the PI for detailed verification and review.
-                </p>
-
-                <!-- Update the href value below with the PI's email address or contact portal path -->
-                <a href="proposal/index.html" class="proposal-btn">
-                    <i class="fa-solid fa-paper-plane"></i> Submit Proposal to PI
-                </a>
-            </div>
-        </div>
 
 
 

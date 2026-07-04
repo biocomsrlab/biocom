@@ -1,26 +1,276 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from whwanglab.mgh.harvard.edu/research/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Jul 2026 18:20:12 GMT -->
+<!-- Mirrored from whwanglab.mgh.harvard.edu/research/spatial-oncology/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Jul 2026 18:23:40 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<title>Research &#8211; BioCoM SR Lab</title>
+	<link rel="profile" href="https://gmpg.org/xfn/11"> 
+	<title>Submit Research Proposal | BioCoM SR Lab</title>
 <meta name='robots' content='max-image-preview:large' />
 <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
 <link href='https://fonts.googleapis.com/' rel='preconnect' />
 <link href='https://fonts.gstatic.com/' crossorigin='anonymous' rel='preconnect' />
-<link rel="alternate" type="application/rss+xml" title="BioCoM SR Lab &raquo; Feed" href="../feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="BioCoM SR Lab &raquo; Comments Feed" href="../comments/feed/index.html" />
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../wp-json/oembed/1.0/embed7f22.json?url=https%3A%2F%2Fwhwanglab.mgh.harvard.edu%2Fresearch%2F" />
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed3d7c?url=https%3A%2F%2Fwhwanglab.mgh.harvard.edu%2Fresearch%2F&amp;format=xml" />
+<link rel="alternate" type="application/rss+xml" title="BioCoM SR Lab &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="BioCoM SR Lab &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed1094.json?url=https%3A%2F%2Fwhwanglab.mgh.harvard.edu%2Fresearch%2Fspatial-oncology%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed413a?url=https%3A%2F%2Fwhwanglab.mgh.harvard.edu%2Fresearch%2Fspatial-oncology%2F&amp;format=xml" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ==================== GLOBAL ROOT LAB STYLES ==================== */
+        :root {
+            --primary-accent: #0f172a;
+            --secondary-accent: #2563eb;
+            --border-subtle: #e2e8f0;
+            --bg-card: #ffffff;
+            --text-main: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc;
+            color: var(--text-main);
+        }
+
+        /* ==================== STANDARDIZED LAB HEADER MENU ==================== */
+        .lab-header-nav {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lab-logo-text {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--primary-accent);
+            text-decoration: none;
+        }
+
+        .lab-logo-text span {
+            color: var(--secondary-accent);
+        }
+
+        .nav-menu-tabs {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu-tabs a {
+            text-decoration: none;
+            color: #64748b;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        .nav-menu-tabs a:hover, .nav-menu-tabs a.active {
+            color: var(--secondary-accent);
+        }
+
+        /* ==================== FORM CONTAINER & LAYOUT ==================== */
+        .form-page-wrapper {
+            max-width: 750px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .form-heading-block {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .form-heading-block h1 {
+            font-size: 2rem;
+            color: var(--primary-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-heading-block p {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        .proposal-form-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-row-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-field-block {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-field-block.full-width {
+            grid-column: span 2;
+        }
+
+        label {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--primary-accent);
+        }
+		
+		textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid black;
+            border-radius: 6px;
+            font-size: 0.92rem;
+            color: var(--text-main);
+            box-sizing: border-box;
+            transition: border-color 0.2s ease;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 0.92rem;
+            color: var(--text-main);
+            box-sizing: border-box;
+            transition: border-color 0.2s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--secondary-accent);
+        }
+
+        /* Custom File Upload Styling Control */
+        .file-upload-wrapper {
+            border: 2px dashed #cbd5e1;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            background: #f8fafc;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .file-upload-wrapper:hover {
+            border-color: var(--secondary-accent);
+            background: #f0fdf4;
+        }
+
+        .file-upload-wrapper i {
+            font-size: 1.5rem;
+            color: #64748b;
+            margin-bottom: 0.5rem;
+        }
+
+        .file-upload-wrapper input[type="file"] {
+            display: none;
+        }
+
+        .file-spec-notice {
+            font-size: 0.75rem;
+            color: #64748b;
+            margin-top: 0.25rem;
+        }
+
+        .file-selected-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--secondary-accent);
+            margin-top: 0.5rem;
+        }
+
+        /* --- Submit Button Styles --- */
+        .submit-form-btn {
+            width: 100%;
+            background: var(--secondary-accent);
+            color: #ffffff;
+            border: none;
+            padding: 0.85rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.2s ease;
+        }
+
+        .submit-form-btn:hover {
+            background: #1d4ed8;
+        }
+
+        /* ==================== RESPONSIVE VIEWPORTS ==================== */
+        @media (max-width: 640px) {
+            .form-row-group {
+                grid-template-columns: 1fr;
+            }
+            .form-field-block.full-width {
+                grid-column: span 1;
+            }
+            .proposal-form-card {
+                padding: 1.5rem;
+            }
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
 </style>
-<link rel='stylesheet' id='astra-theme-css-css' href='../wp-content/themes/astra/assets/css/minified/main.min272c.css?ver=4.13.5' media='all' />
+<link rel='stylesheet' id='astra-theme-css-css' href='../../wp-content/themes/astra/assets/css/minified/main.min272c.css?ver=4.13.5' media='all' />
 <style id="astra-theme-css-inline-css">
 :root{--ast-post-nav-space:0;--ast-container-default-xlg-padding:6.67em;--ast-container-default-lg-padding:5.67em;--ast-container-default-slg-padding:4.34em;--ast-container-default-md-padding:3.34em;--ast-container-default-sm-padding:6.67em;--ast-container-default-xs-padding:2.4em;--ast-container-default-xxs-padding:1.4em;--ast-code-block-background:#EEEEEE;--ast-comment-inputs-background:#FAFAFA;--ast-normal-container-width:1200px;--ast-narrow-container-width:750px;--ast-blog-title-font-weight:normal;--ast-blog-meta-weight:inherit;--ast-global-color-primary:var(--ast-global-color-5);--ast-global-color-secondary:var(--ast-global-color-4);--ast-global-color-alternate-background:var(--ast-global-color-7);--ast-global-color-subtle-background:var(--ast-global-color-6);--ast-bg-style-guide:var( --ast-global-color-secondary,var(--ast-global-color-5) );--ast-shadow-style-guide:0px 0px 4px 0 #00000057;--ast-global-dark-bg-style:#fff;--ast-global-dark-lfs:#fbfbfb;--ast-widget-bg-color:#fafafa;--ast-wc-container-head-bg-color:#fbfbfb;--ast-title-layout-bg:#eeeeee;--ast-search-border-color:#e7e7e7;--ast-lifter-hover-bg:#e6e6e6;--ast-gallery-block-color:#000;--srfm-color-input-label:var(--ast-global-color-2);}html{font-size:106.25%;}a,.page-title{color:var(--ast-global-color-2);}a:hover,a:focus{color:var(--ast-global-color-1);}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:'Source Sans Pro',sans-serif;font-weight:400;font-size:17px;font-size:1rem;line-height:var(--ast-body-line-height,1.65em);}blockquote{color:var(--ast-global-color-3);}h1,h2,h3,h4,h5,h6,.entry-content :where(h1,h2,h3,h4,h5,h6),.site-title,.site-title a{font-family:'Montserrat',sans-serif;font-weight:600;}.site-title{font-size:35px;font-size:2.0588235294118rem;display:block;}header .custom-logo-link img{max-width:70px;width:70px;}.astra-logo-svg{width:70px;}.site-header .site-description{font-size:15px;font-size:0.88235294117647rem;display:none;}.entry-title{font-size:26px;font-size:1.5294117647059rem;}.archive .ast-article-post .ast-article-inner,.blog .ast-article-post .ast-article-inner,.archive .ast-article-post .ast-article-inner:hover,.blog .ast-article-post .ast-article-inner:hover{overflow:hidden;}h1,.entry-content :where(h1){font-size:48px;font-size:2.8235294117647rem;font-family:'Montserrat',sans-serif;line-height:1.4em;}h2,.entry-content :where(h2){font-size:40px;font-size:2.3529411764706rem;font-family:'Montserrat',sans-serif;line-height:1.3em;}h3,.entry-content :where(h3){font-size:32px;font-size:1.8823529411765rem;font-family:'Montserrat',sans-serif;line-height:1.3em;}h4,.entry-content :where(h4){font-size:24px;font-size:1.4117647058824rem;line-height:1.2em;font-family:'Montserrat',sans-serif;}h5,.entry-content :where(h5){font-size:20px;font-size:1.1764705882353rem;line-height:1.2em;font-family:'Montserrat',sans-serif;}h6,.entry-content :where(h6){font-size:17px;font-size:1rem;line-height:1.25em;font-family:'Montserrat',sans-serif;}::selection{background-color:var(--ast-global-color-5);color:#000000;}body,h1,h2,h3,h4,h5,h6,.entry-title a,.entry-content :where(h1,h2,h3,h4,h5,h6){color:var(--ast-global-color-3);}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#ffffff;border-color:var(--ast-global-color-2);background-color:var(--ast-global-color-2);}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:var(--ast-global-color-2);}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:var(--ast-global-color-2);background-color:var(--ast-global-color-2);box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:var(--ast-global-color-2);border-color:var(--ast-global-color-2);}.single .nav-links .nav-previous,.single .nav-links .nav-next{color:var(--ast-global-color-2);}.entry-meta,.entry-meta *{line-height:1.45;color:var(--ast-global-color-2);}.entry-meta a:not(.ast-button):hover,.entry-meta a:not(.ast-button):hover *,.entry-meta a:not(.ast-button):focus,.entry-meta a:not(.ast-button):focus *,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:var(--ast-global-color-1);}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:var(--ast-global-color-2);}.secondary .calendar_wrap #today,.ast-progress-val span{background:var(--ast-global-color-2);}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:var(--ast-global-color-2);border-color:var(--ast-global-color-2);}.calendar_wrap #today > a{color:#ffffff;}.page-links .page-link,.single .post-navigation a{color:var(--ast-global-color-2);}.ast-search-menu-icon .search-form button.search-submit{padding:0 4px;}.ast-search-menu-icon form.search-form{padding-right:0;}.ast-header-search .ast-search-menu-icon.ast-dropdown-active .search-form,.ast-header-search .ast-search-menu-icon.ast-dropdown-active .search-field:focus{transition:all 0.2s;}.search-form input.search-field:focus{outline:none;}.ast-mobile-header-content .ast-builder-layout-element:not(.ast-builder-menu):not(.ast-header-divider-element),.ast-mobile-popup-content .ast-builder-layout-element:not(.ast-builder-menu):not(.ast-header-divider-element){padding:15px 20px;}.wp-block-latest-posts > li > a{color:#000000;}.widget-title,.widget .wp-block-heading{font-size:24px;font-size:1.4117647058824rem;color:var(--ast-global-color-3);}.ast-search-menu-icon.slide-search a:focus-visible:focus-visible,.astra-search-icon:focus-visible,#close:focus-visible,a:focus-visible,.ast-menu-toggle:focus-visible,.site .skip-link:focus-visible,.wp-block-loginout input:focus-visible,.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper,.ast-header-navigation-arrow:focus-visible,.ast-orders-table__row .ast-orders-table__cell:focus-visible,a#ast-apply-coupon:focus-visible,#ast-apply-coupon:focus-visible,#close:focus-visible,.button.search-submit:focus-visible,#search_submit:focus,.normal-search:focus-visible,.ast-header-account-wrap:focus-visible,.astra-cart-drawer-close:focus,.ast-single-variation:focus,.ast-button:focus,.ast-builder-button-wrap:has(.ast-custom-button-link:focus),.ast-builder-button-wrap .ast-custom-button-link:focus{outline-style:dotted;outline-color:inherit;outline-width:thin;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,input[type="number"]:focus,textarea:focus,.wp-block-search__input:focus,[data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal:focus,.ast-mobile-popup-drawer.active .menu-toggle-close:focus,#ast-scroll-top:focus,#coupon_code:focus,#ast-coupon-code:focus{border-style:dotted;border-color:inherit;border-width:thin;}input{outline:none;}.ast-logo-title-inline .site-logo-img{padding-right:1em;}.site-logo-img img{ transition:all 0.2s linear;}body .ast-oembed-container *{position:absolute;top:0;width:100%;height:100%;left:0;}body .wp-block-embed-pocket-casts .ast-oembed-container *{position:unset;}.ast-single-post-featured-section + article {margin-top: 2em;}.site-content .ast-single-post-featured-section img {width: 100%;overflow: hidden;object-fit: cover;}.site > .ast-single-related-posts-container {margin-top: 0;}@media (min-width: 922px) {.ast-desktop .ast-container--narrow {max-width: var(--ast-narrow-container-width);margin: 0 auto;}}.ast-page-builder-template .hentry {margin: 0;}.ast-page-builder-template .site-content > .ast-container {max-width: 100%;padding: 0;}.ast-page-builder-template .site .site-content #primary {padding: 0;margin: 0;}.ast-page-builder-template .no-results {text-align: center;margin: 4em auto;}.ast-page-builder-template .ast-pagination {padding: 2em;}.ast-page-builder-template .entry-header.ast-no-title.ast-no-thumbnail {margin-top: 0;}.ast-page-builder-template .entry-header.ast-header-without-markup {margin-top: 0;margin-bottom: 0;}.ast-page-builder-template .entry-header.ast-no-title.ast-no-meta {margin-bottom: 0;}.ast-page-builder-template.single .post-navigation {padding-bottom: 2em;}.ast-page-builder-template.single-post .site-content > .ast-container {max-width: 100%;}.ast-page-builder-template .entry-header {margin-top: 4em;margin-left: auto;margin-right: auto;padding-left: 20px;padding-right: 20px;}.single.ast-page-builder-template .entry-header {padding-left: 20px;padding-right: 20px;}.ast-page-builder-template .ast-archive-description {margin: 4em auto 0;padding-left: 20px;padding-right: 20px;}.ast-page-builder-template.ast-no-sidebar .entry-content .alignwide {margin-left: 0;margin-right: 0;}@media (max-width:921.99px){#ast-desktop-header{display:none;}}@media (min-width:922px){#ast-mobile-header{display:none;}}.wp-block-buttons.aligncenter{justify-content:center;}@media (max-width:921px){.ast-theme-transparent-header #primary,.ast-theme-transparent-header #secondary{padding:0;}}@media (max-width:921px){.ast-plain-container.ast-no-sidebar #primary{padding:0;}}.ast-plain-container.ast-no-sidebar #primary{margin-top:0;margin-bottom:0;}.wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.wp-element-button,.ast-outline-button,.wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button{border-color:var(--ast-global-color-0);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;font-family:inherit;font-weight:inherit;font-size:16px;font-size:0.94117647058824rem;line-height:1em;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;border-top-left-radius:30px;border-top-right-radius:30px;border-bottom-right-radius:30px;border-bottom-left-radius:30px;}.wp-block-buttons .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color),.wp-block-buttons .wp-block-button.wp-block-button__link.is-style-outline:not(.has-text-color),.ast-outline-button{color:var(--ast-global-color-0);}.wp-block-button.is-style-outline .wp-block-button__link:hover,.wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:focus,.wp-block-buttons .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):hover,.wp-block-buttons .wp-block-button.wp-block-button__link.is-style-outline:not(.has-text-color):hover,.ast-outline-button:hover,.ast-outline-button:focus,.wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button:hover,.wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button:focus{background-color:var(--ast-global-color-1);}.wp-block-button .wp-block-button__link.wp-element-button.is-style-outline:not(.has-background),.wp-block-button.is-style-outline>.wp-block-button__link.wp-element-button:not(.has-background),.ast-outline-button{background-color:transparent;}.entry-content[data-ast-blocks-layout] > figure{margin-bottom:1em;}@media (max-width:921px){.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-author-box img.avatar{margin:20px 0 0 0;}}@media (min-width:922px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}.elementor-widget-button .elementor-button{border-style:solid;text-decoration:none;border-top-width:1px;border-right-width:1px;border-left-width:1px;border-bottom-width:1px;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{border-top-left-radius:30px;border-top-right-radius:30px;border-bottom-right-radius:30px;border-bottom-left-radius:30px;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.wp-block-button .wp-block-button__link ,.elementor-widget-button .elementor-button,.elementor-widget-button .elementor-button:visited{color:var(--ast-global-color-5);}.elementor-widget-button .elementor-button{border-color:var(--ast-global-color-5);background-color:transparent;}.elementor-widget-button .elementor-button:hover,.elementor-widget-button .elementor-button:focus{color:var(--ast-global-color-5);background-color:var(--ast-global-color-5);border-color:var(--ast-global-color-5);}.elementor-widget-button .elementor-button{font-size:16px;font-size:0.94117647058824rem;line-height:1em;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{font-size:16px;font-size:0.94117647058824rem;}.wp-block-button .wp-block-button__link:hover,.wp-block-button .wp-block-button__link:focus{color:var(--ast-global-color-5);background-color:var(--ast-global-color-5);border-color:var(--ast-global-color-5);}.elementor-widget-heading h1.elementor-heading-title{line-height:1.4em;}.elementor-widget-heading h2.elementor-heading-title{line-height:1.3em;}.elementor-widget-heading h3.elementor-heading-title{line-height:1.3em;}.elementor-widget-heading h4.elementor-heading-title{line-height:1.2em;}.elementor-widget-heading h5.elementor-heading-title{line-height:1.2em;}.elementor-widget-heading h6.elementor-heading-title{line-height:1.25em;}.wp-block-button .wp-block-button__link,.wp-block-search .wp-block-search__button,body .wp-block-file .wp-block-file__button{border-style:solid;border-top-width:1px;border-right-width:1px;border-left-width:1px;border-bottom-width:1px;border-color:var(--ast-global-color-5);background-color:transparent;color:var(--ast-global-color-5);font-family:inherit;font-weight:inherit;line-height:1em;font-size:16px;font-size:0.94117647058824rem;border-top-left-radius:30px;border-top-right-radius:30px;border-bottom-right-radius:30px;border-bottom-left-radius:30px;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"],form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button,body .wp-block-file .wp-block-file__button{border-style:solid;border-top-width:1px;border-right-width:1px;border-left-width:1px;border-bottom-width:1px;color:var(--ast-global-color-5);border-color:var(--ast-global-color-5);background-color:transparent;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;font-family:inherit;font-weight:inherit;font-size:16px;font-size:0.94117647058824rem;line-height:1em;border-top-left-radius:30px;border-top-right-radius:30px;border-bottom-right-radius:30px;border-bottom-left-radius:30px;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.ast-custom-button:hover .button:hover,.ast-custom-button:hover ,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus,form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button:hover,form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button:focus,body .wp-block-file .wp-block-file__button:hover,body .wp-block-file .wp-block-file__button:focus{color:var(--ast-global-color-5);background-color:var(--ast-global-color-5);border-color:var(--ast-global-color-5);}@media (max-width:921px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}.ast-comment-avatar-wrap img{max-width:2.5em;}.ast-comment-meta{padding:0 1.8888em 1.3333em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single,.ast-separate-container .comments-title,.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}} #ast-mobile-header .ast-site-header-cart-li a{pointer-events:none;}@media (min-width:545px){.ast-page-builder-template .comments-area,.single.ast-page-builder-template .entry-header,.single.ast-page-builder-template .post-navigation,.single.ast-page-builder-template .ast-single-related-posts-container{max-width:1240px;margin-left:auto;margin-right:auto;}}body,.ast-separate-container{background-image:none;}@media (max-width:921px){.widget-title{font-size:24px;font-size:1.4117647058824rem;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-size:17px;font-size:1rem;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:17px;font-size:1rem;}.site-title{display:block;}.site-header .site-description{display:none;}h1,.entry-content :where(h1){font-size:36px;}h2,.entry-content :where(h2){font-size:30px;}h3,.entry-content :where(h3){font-size:25px;}h4,.entry-content :where(h4){font-size:20px;font-size:1.1764705882353rem;}h5,.entry-content :where(h5){font-size:17px;font-size:1rem;}h6,.entry-content :where(h6){font-size:15px;font-size:0.88235294117647rem;}.astra-logo-svg{width:120px;}header .custom-logo-link img,.ast-header-break-point .site-logo-img .custom-mobile-logo-link img{max-width:120px;width:120px;}}@media (max-width:544px){.widget-title{font-size:24px;font-size:1.4117647058824rem;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-size:17px;font-size:1rem;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:17px;font-size:1rem;}.site-title{display:block;}.site-header .site-description{display:none;}h1,.entry-content :where(h1){font-size:32px;}h2,.entry-content :where(h2){font-size:26px;}h3,.entry-content :where(h3){font-size:22px;}h4,.entry-content :where(h4){font-size:18px;font-size:1.0588235294118rem;}h5,.entry-content :where(h5){font-size:15px;font-size:0.88235294117647rem;}h6,.entry-content :where(h6){font-size:13px;font-size:0.76470588235294rem;}header .custom-logo-link img,.ast-header-break-point .site-branding img,.ast-header-break-point .custom-logo-link img{max-width:100px;width:100px;}.astra-logo-svg{width:100px;}.ast-header-break-point .site-logo-img .custom-mobile-logo-link img{max-width:100px;}}@media (max-width:544px){html{font-size:106.25%;}}@media (min-width:922px){.ast-container{max-width:1240px;}}@media (min-width:922px){.site-content .ast-container{display:flex;}}@media (max-width:921px){.site-content .ast-container{flex-direction:column;}}@media (min-width:922px){.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover > .sub-menu,.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus > .sub-menu{margin-left:-0px;}}.site .comments-area{padding-bottom:3em;}.wp-block-file {display: flex;align-items: center;flex-wrap: wrap;justify-content: space-between;}.wp-block-pullquote {border: none;}.wp-block-pullquote blockquote::before {content: "\201D";font-family: "Helvetica",sans-serif;display: flex;transform: rotate( 180deg );font-size: 6rem;font-style: normal;line-height: 1;font-weight: bold;align-items: center;justify-content: center;}.has-text-align-right > blockquote::before {justify-content: flex-start;}.has-text-align-left > blockquote::before {justify-content: flex-end;}figure.wp-block-pullquote.is-style-solid-color blockquote {max-width: 100%;text-align: inherit;}:root {--wp--custom--ast-default-block-top-padding: 3em;--wp--custom--ast-default-block-right-padding: 3em;--wp--custom--ast-default-block-bottom-padding: 3em;--wp--custom--ast-default-block-left-padding: 3em;--wp--custom--ast-container-width: 1200px;--wp--custom--ast-content-width-size: 1200px;--wp--custom--ast-wide-width-size: calc(1200px + var(--wp--custom--ast-default-block-left-padding) + var(--wp--custom--ast-default-block-right-padding));}.ast-narrow-container {--wp--custom--ast-content-width-size: 750px;--wp--custom--ast-wide-width-size: 750px;}@media(max-width: 921px) {:root {--wp--custom--ast-default-block-top-padding: 3em;--wp--custom--ast-default-block-right-padding: 2em;--wp--custom--ast-default-block-bottom-padding: 3em;--wp--custom--ast-default-block-left-padding: 2em;}}@media(max-width: 544px) {:root {--wp--custom--ast-default-block-top-padding: 3em;--wp--custom--ast-default-block-right-padding: 1.5em;--wp--custom--ast-default-block-bottom-padding: 3em;--wp--custom--ast-default-block-left-padding: 1.5em;}}.entry-content > .wp-block-group,.entry-content > .wp-block-cover,.entry-content > .wp-block-columns {padding-top: var(--wp--custom--ast-default-block-top-padding);padding-right: var(--wp--custom--ast-default-block-right-padding);padding-bottom: var(--wp--custom--ast-default-block-bottom-padding);padding-left: var(--wp--custom--ast-default-block-left-padding);}.ast-plain-container.ast-no-sidebar .entry-content > .alignfull,.ast-page-builder-template .ast-no-sidebar .entry-content > .alignfull {margin-left: calc( -50vw + 50%);margin-right: calc( -50vw + 50%);max-width: 100vw;width: 100vw;}.ast-plain-container.ast-no-sidebar .entry-content .alignfull .alignfull,.ast-page-builder-template.ast-no-sidebar .entry-content .alignfull .alignfull,.ast-plain-container.ast-no-sidebar .entry-content .alignfull .alignwide,.ast-page-builder-template.ast-no-sidebar .entry-content .alignfull .alignwide,.ast-plain-container.ast-no-sidebar .entry-content .alignwide .alignfull,.ast-page-builder-template.ast-no-sidebar .entry-content .alignwide .alignfull,.ast-plain-container.ast-no-sidebar .entry-content .alignwide .alignwide,.ast-page-builder-template.ast-no-sidebar .entry-content .alignwide .alignwide,.ast-plain-container.ast-no-sidebar .entry-content .wp-block-column .alignfull,.ast-page-builder-template.ast-no-sidebar .entry-content .wp-block-column .alignfull,.ast-plain-container.ast-no-sidebar .entry-content .wp-block-column .alignwide,.ast-page-builder-template.ast-no-sidebar .entry-content .wp-block-column .alignwide {margin-left: auto;margin-right: auto;width: 100%;}[data-ast-blocks-layout] .wp-block-separator:not(.is-style-dots) {height: 0;}[data-ast-blocks-layout] .wp-block-separator {margin: 20px auto;}[data-ast-blocks-layout] .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {max-width: 100px;}[data-ast-blocks-layout] .wp-block-separator.has-background {padding: 0;}.entry-content[data-ast-blocks-layout] > * {max-width: var(--wp--custom--ast-content-width-size);margin-left: auto;margin-right: auto;}.entry-content[data-ast-blocks-layout] > .alignwide {max-width: var(--wp--custom--ast-wide-width-size);}.entry-content[data-ast-blocks-layout] .alignfull {max-width: none;}.entry-content .wp-block-columns {margin-bottom: 0;}blockquote {margin: 1.5em;border-color: rgba(0,0,0,0.05);}.wp-block-quote:not(.has-text-align-right):not(.has-text-align-center) {border-left: 5px solid rgba(0,0,0,0.05);}.has-text-align-right > blockquote,blockquote.has-text-align-right {border-right: 5px solid rgba(0,0,0,0.05);}.has-text-align-left > blockquote,blockquote.has-text-align-left {border-left: 5px solid rgba(0,0,0,0.05);}.wp-block-site-tagline,.wp-block-latest-posts .read-more {margin-top: 15px;}.wp-block-loginout p label {display: block;}.wp-block-loginout p:not(.login-remember):not(.login-submit) input {width: 100%;}.wp-block-loginout input:focus {border-color: transparent;}.wp-block-loginout input:focus {outline: thin dotted;}.entry-content .wp-block-media-text .wp-block-media-text__content {padding: 0 0 0 8%;}.entry-content .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {padding: 0 8% 0 0;}.entry-content .wp-block-media-text.has-background .wp-block-media-text__content {padding: 8%;}.entry-content .wp-block-cover:not([class*="background-color"]):not(.has-text-color.has-link-color) .wp-block-cover__inner-container,.entry-content .wp-block-cover:not([class*="background-color"]) .wp-block-cover-image-text,.entry-content .wp-block-cover:not([class*="background-color"]) .wp-block-cover-text,.entry-content .wp-block-cover-image:not([class*="background-color"]) .wp-block-cover__inner-container,.entry-content .wp-block-cover-image:not([class*="background-color"]) .wp-block-cover-image-text,.entry-content .wp-block-cover-image:not([class*="background-color"]) .wp-block-cover-text {color: var(--ast-global-color-primary,var(--ast-global-color-5));}.wp-block-loginout .login-remember input {width: 1.1rem;height: 1.1rem;margin: 0 5px 4px 0;vertical-align: middle;}.wp-block-latest-posts > li > *:first-child,.wp-block-latest-posts:not(.is-grid) > li:first-child {margin-top: 0;}.entry-content > .wp-block-buttons,.entry-content > .wp-block-uagb-buttons {margin-bottom: 1.5em;}.wp-block-search__inside-wrapper .wp-block-search__input {padding: 0 10px;color: var(--ast-global-color-3);background: var(--ast-global-color-primary,var(--ast-global-color-5));border-color: var(--ast-border-color);}.wp-block-latest-posts .read-more {margin-bottom: 1.5em;}.wp-block-search__no-button .wp-block-search__inside-wrapper .wp-block-search__input {padding-top: 5px;padding-bottom: 5px;}.wp-block-latest-posts .wp-block-latest-posts__post-date,.wp-block-latest-posts .wp-block-latest-posts__post-author {font-size: 1rem;}.wp-block-latest-posts > li > *,.wp-block-latest-posts:not(.is-grid) > li {margin-top: 12px;margin-bottom: 12px;}.ast-page-builder-template .entry-content[data-ast-blocks-layout] > .alignwide:where(:not(.uagb-is-root-container):not(.spectra-is-root-container)) > * {max-width: var(--wp--custom--ast-wide-width-size);}.ast-page-builder-template .entry-content[data-ast-blocks-layout] > .inherit-container-width > *,.ast-page-builder-template .entry-content[data-ast-blocks-layout] > *:not(.wp-block-group):where(:not(.uagb-is-root-container):not(.spectra-is-root-container)) > *,.entry-content[data-ast-blocks-layout] > .wp-block-cover .wp-block-cover__inner-container {max-width: var(--wp--custom--ast-content-width-size) ;margin-left: auto;margin-right: auto;}.ast-page-builder-template .entry-content[data-ast-blocks-layout] > *,.ast-page-builder-template .entry-content[data-ast-blocks-layout] > .alignfull:where(:not(.wp-block-group):not(.uagb-is-root-container):not(.spectra-is-root-container)) > * {max-width: none;}.entry-content[data-ast-blocks-layout] .wp-block-cover:not(.alignleft):not(.alignright) {width: auto;}@media(max-width: 1200px) {.ast-separate-container .entry-content > .alignfull,.ast-separate-container .entry-content[data-ast-blocks-layout] > .alignwide,.ast-plain-container .entry-content[data-ast-blocks-layout] > .alignwide,.ast-plain-container .entry-content .alignfull {margin-left: calc(-1 * min(var(--ast-container-default-xlg-padding),20px)) ;margin-right: calc(-1 * min(var(--ast-container-default-xlg-padding),20px));}}@media(min-width: 1201px) {.ast-separate-container .entry-content > .alignfull {margin-left: calc(-1 * var(--ast-container-default-xlg-padding) );margin-right: calc(-1 * var(--ast-container-default-xlg-padding) );}.ast-separate-container .entry-content[data-ast-blocks-layout] > .alignwide,.ast-plain-container .entry-content[data-ast-blocks-layout] > .alignwide {margin-left: calc(-1 * var(--wp--custom--ast-default-block-left-padding) );margin-right: calc(-1 * var(--wp--custom--ast-default-block-right-padding) );}}@media(min-width: 921px) {.ast-separate-container .entry-content .wp-block-group.alignwide:not(.inherit-container-width) > :where(:not(.alignleft):not(.alignright)),.ast-plain-container .entry-content .wp-block-group.alignwide:not(.inherit-container-width) > :where(:not(.alignleft):not(.alignright)) {max-width: calc( var(--wp--custom--ast-content-width-size) + 80px );}.ast-plain-container.ast-right-sidebar .entry-content[data-ast-blocks-layout] .alignfull,.ast-plain-container.ast-left-sidebar .entry-content[data-ast-blocks-layout] .alignfull {margin-left: -60px;margin-right: -60px;}}@media(min-width: 544px) {.entry-content > .alignleft {margin-right: 20px;}.entry-content > .alignright {margin-left: 20px;}}@media (max-width:544px){.wp-block-columns .wp-block-column:not(:last-child){margin-bottom:20px;}.wp-block-latest-posts{margin:0;}}@media( max-width: 600px ) {.entry-content .wp-block-media-text .wp-block-media-text__content,.entry-content .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {padding: 8% 0 0;}.entry-content .wp-block-media-text.has-background .wp-block-media-text__content {padding: 8%;}}.ast-page-builder-template .entry-header {padding-left: 0;}.ast-narrow-container .site-content .wp-block-uagb-image--align-full .wp-block-uagb-image__figure {max-width: 100%;margin-left: auto;margin-right: auto;}:root .has-ast-global-color-0-color{color:var(--ast-global-color-0);}:root .has-ast-global-color-0-background-color{background-color:var(--ast-global-color-0);}:root .wp-block-button .has-ast-global-color-0-color{color:var(--ast-global-color-0);}:root .wp-block-button .has-ast-global-color-0-background-color{background-color:var(--ast-global-color-0);}:root .has-ast-global-color-1-color{color:var(--ast-global-color-1);}:root .has-ast-global-color-1-background-color{background-color:var(--ast-global-color-1);}:root .wp-block-button .has-ast-global-color-1-color{color:var(--ast-global-color-1);}:root .wp-block-button .has-ast-global-color-1-background-color{background-color:var(--ast-global-color-1);}:root .has-ast-global-color-2-color{color:var(--ast-global-color-2);}:root .has-ast-global-color-2-background-color{background-color:var(--ast-global-color-2);}:root .wp-block-button .has-ast-global-color-2-color{color:var(--ast-global-color-2);}:root .wp-block-button .has-ast-global-color-2-background-color{background-color:var(--ast-global-color-2);}:root .has-ast-global-color-3-color{color:var(--ast-global-color-3);}:root .has-ast-global-color-3-background-color{background-color:var(--ast-global-color-3);}:root .wp-block-button .has-ast-global-color-3-color{color:var(--ast-global-color-3);}:root .wp-block-button .has-ast-global-color-3-background-color{background-color:var(--ast-global-color-3);}:root .has-ast-global-color-4-color{color:var(--ast-global-color-4);}:root .has-ast-global-color-4-background-color{background-color:var(--ast-global-color-4);}:root .wp-block-button .has-ast-global-color-4-color{color:var(--ast-global-color-4);}:root .wp-block-button .has-ast-global-color-4-background-color{background-color:var(--ast-global-color-4);}:root .has-ast-global-color-5-color{color:var(--ast-global-color-5);}:root .has-ast-global-color-5-background-color{background-color:var(--ast-global-color-5);}:root .wp-block-button .has-ast-global-color-5-color{color:var(--ast-global-color-5);}:root .wp-block-button .has-ast-global-color-5-background-color{background-color:var(--ast-global-color-5);}:root .has-ast-global-color-6-color{color:var(--ast-global-color-6);}:root .has-ast-global-color-6-background-color{background-color:var(--ast-global-color-6);}:root .wp-block-button .has-ast-global-color-6-color{color:var(--ast-global-color-6);}:root .wp-block-button .has-ast-global-color-6-background-color{background-color:var(--ast-global-color-6);}:root .has-ast-global-color-7-color{color:var(--ast-global-color-7);}:root .has-ast-global-color-7-background-color{background-color:var(--ast-global-color-7);}:root .wp-block-button .has-ast-global-color-7-color{color:var(--ast-global-color-7);}:root .wp-block-button .has-ast-global-color-7-background-color{background-color:var(--ast-global-color-7);}:root .has-ast-global-color-8-color{color:var(--ast-global-color-8);}:root .has-ast-global-color-8-background-color{background-color:var(--ast-global-color-8);}:root .wp-block-button .has-ast-global-color-8-color{color:var(--ast-global-color-8);}:root .wp-block-button .has-ast-global-color-8-background-color{background-color:var(--ast-global-color-8);}:root{--ast-global-color-0:#ec5b53;--ast-global-color-1:#cf332b;--ast-global-color-2:#002d5b;--ast-global-color-3:#35373a;--ast-global-color-4:#fefafa;--ast-global-color-5:#ffffff;--ast-global-color-6:#F2F5F7;--ast-global-color-7:#35373a;--ast-global-color-8:#002d5b;}:root {--ast-border-color : #dddddd;}.ast-single-entry-banner {-js-display: flex;display: flex;flex-direction: column;justify-content: center;text-align: center;position: relative;background: var(--ast-title-layout-bg);}.ast-single-entry-banner[data-banner-layout="layout-1"] {max-width: 1200px;background: inherit;padding: 20px 0;}.ast-single-entry-banner[data-banner-width-type="custom"] {margin: 0 auto;width: 100%;}.ast-single-entry-banner + .site-content .entry-header {margin-bottom: 0;}.site .ast-author-avatar {--ast-author-avatar-size: ;}a.ast-underline-text {text-decoration: underline;}.ast-container > .ast-terms-link {position: relative;display: block;}a.ast-button.ast-badge-tax {padding: 4px 8px;border-radius: 3px;font-size: inherit;}header.entry-header{text-align:left;}header.entry-header > *:not(:last-child){margin-bottom:10px;}@media (max-width:921px){header.entry-header{text-align:left;}}@media (max-width:544px){header.entry-header{text-align:left;}}.ast-archive-entry-banner {-js-display: flex;display: flex;flex-direction: column;justify-content: center;text-align: center;position: relative;background: var(--ast-title-layout-bg);}.ast-archive-entry-banner[data-banner-width-type="custom"] {margin: 0 auto;width: 100%;}.ast-archive-entry-banner[data-banner-layout="layout-1"] {background: inherit;padding: 20px 0;text-align: left;}body.archive .ast-archive-description{max-width:1200px;width:100%;text-align:left;padding-top:3em;padding-right:3em;padding-bottom:3em;padding-left:3em;}body.archive .ast-archive-description .ast-archive-title,body.archive .ast-archive-description .ast-archive-title *{font-size:40px;font-size:2.3529411764706rem;}body.archive .ast-archive-description > *:not(:last-child){margin-bottom:10px;}@media (max-width:921px){body.archive .ast-archive-description{text-align:left;}}@media (max-width:544px){body.archive .ast-archive-description{text-align:left;}}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;text-decoration:none;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}h1,h2,h3,h4,h5,h6,.entry-content :where(h1,h2,h3,h4,h5,h6){color:#000000;}@media (max-width:921px){.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-firstrow .ast-builder-grid-row > *:first-child,.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-lastrow .ast-builder-grid-row > *:last-child{grid-column:1 / -1;}}@media (max-width:544px){.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-firstrow .ast-builder-grid-row > *:first-child,.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-lastrow .ast-builder-grid-row > *:last-child{grid-column:1 / -1;}}.ast-builder-layout-element[data-section="title_tagline"]{display:flex;}@media (max-width:921.99px){.ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"]{display:flex;}}@media (max-width:544px){.ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"]{display:flex;}}.ast-builder-menu-1{font-family:inherit;font-weight:inherit;}.ast-builder-menu-1 .sub-menu,.ast-builder-menu-1 .inline-on-mobile .sub-menu{border-top-width:2px;border-bottom-width:0px;border-right-width:0px;border-left-width:0px;border-color:var(--ast-global-color-5);border-style:solid;}.ast-builder-menu-1 .sub-menu .sub-menu{top:-2px;}.ast-builder-menu-1 .main-header-menu > .menu-item > .sub-menu,.ast-builder-menu-1 .main-header-menu > .menu-item > .astra-full-megamenu-wrapper{margin-top:0px;}.ast-desktop .ast-builder-menu-1 .main-header-menu > .menu-item > .sub-menu:before,.ast-desktop .ast-builder-menu-1 .main-header-menu > .menu-item > .astra-full-megamenu-wrapper:before{height:calc( 0px + 2px + 5px );}.ast-desktop .ast-builder-menu-1 .menu-item .sub-menu .menu-link{border-style:none;}@media (max-width:921px){.ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}.ast-builder-menu-1 .inline-on-mobile .menu-item.menu-item-has-children > .ast-menu-toggle{right:-15px;}.ast-builder-menu-1 .menu-item-has-children > .menu-link:after{content:unset;}.ast-builder-menu-1 .main-header-menu > .menu-item > .sub-menu,.ast-builder-menu-1 .main-header-menu > .menu-item > .astra-full-megamenu-wrapper{margin-top:0;}}@media (max-width:544px){.ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}.ast-builder-menu-1 .main-header-menu > .menu-item > .sub-menu,.ast-builder-menu-1 .main-header-menu > .menu-item > .astra-full-megamenu-wrapper{margin-top:0;}}.ast-builder-menu-1{display:flex;}@media (max-width:921.99px){.ast-header-break-point .ast-builder-menu-1{display:flex;}}@media (max-width:544px){.ast-header-break-point .ast-builder-menu-1{display:flex;}}.elementor-widget-heading .elementor-heading-title{margin:0;}.elementor-page .ast-menu-toggle{color:unset;background:unset;}.elementor-post.elementor-grid-item.hentry{margin-bottom:0;}.woocommerce div.product .elementor-element.elementor-products-grid .related.products ul.products li.product,.elementor-element .elementor-wc-products .woocommerce[class*='columns-'] ul.products li.product{width:auto;margin:0;float:none;}body .elementor hr{background-color:#ccc;margin:0;}.ast-left-sidebar .elementor-section.elementor-section-stretched,.ast-right-sidebar .elementor-section.elementor-section-stretched{max-width:100%;left:0 !important;}.elementor-posts-container [CLASS*="ast-width-"]{width:100%;}.elementor-template-full-width .ast-container{display:block;}.elementor-screen-only,.screen-reader-text,.screen-reader-text span,.ui-helper-hidden-accessible{top:0 !important;}@media (max-width:544px){.elementor-element .elementor-wc-products .woocommerce[class*="columns-"] ul.products li.product{width:auto;margin:0;}.elementor-element .woocommerce .woocommerce-result-count{float:none;}}.ast-header-break-point .main-header-bar{border-bottom-width:1px;}@media (min-width:922px){.main-header-bar{border-bottom-width:1px;}}.main-header-menu .menu-item, #astra-footer-menu .menu-item, .main-header-bar .ast-masthead-custom-menu-items{-js-display:flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}.main-header-menu > .menu-item > .menu-link, #astra-footer-menu > .menu-item > .menu-link{height:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-js-display:flex;display:flex;}.ast-header-break-point .main-navigation ul .menu-item .menu-link .icon-arrow:first-of-type svg{top:.2em;margin-top:0px;margin-left:0px;width:.65em;transform:translate(0, -2px) rotateZ(270deg);}.ast-mobile-popup-content .ast-submenu-expanded > .ast-menu-toggle{transform:rotateX(180deg);overflow-y:auto;}@media (min-width:922px){.ast-builder-menu .main-navigation > ul > li:last-child a{margin-right:0;}}.ast-separate-container .ast-article-inner{background-color:transparent;background-image:none;}.ast-separate-container .ast-article-post{background-image:none;}@media (max-width:921px){.ast-separate-container .ast-article-post{background-color:var(--ast-global-color-5);background-image:none;}}@media (max-width:544px){.ast-separate-container .ast-article-post{background-color:var(--ast-global-color-5);background-image:none;}}.ast-separate-container .ast-article-single:not(.ast-related-post), .ast-separate-container .error-404, .ast-separate-container .no-results, .single.ast-separate-container  .ast-author-meta, .ast-separate-container .related-posts-title-wrapper, .ast-separate-container .comments-count-wrapper, .ast-box-layout.ast-plain-container .site-content, .ast-padded-layout.ast-plain-container .site-content, .ast-separate-container .ast-archive-description, .ast-separate-container .comments-area .comment-respond, .ast-separate-container .comments-area .ast-comment-list li, .ast-separate-container .comments-area .comments-title{background-image:none;}@media (max-width:921px){.ast-separate-container .ast-article-single:not(.ast-related-post), .ast-separate-container .error-404, .ast-separate-container .no-results, .single.ast-separate-container  .ast-author-meta, .ast-separate-container .related-posts-title-wrapper, .ast-separate-container .comments-count-wrapper, .ast-box-layout.ast-plain-container .site-content, .ast-padded-layout.ast-plain-container .site-content, .ast-separate-container .ast-archive-description{background-color:var(--ast-global-color-5);background-image:none;}}@media (max-width:544px){.ast-separate-container .ast-article-single:not(.ast-related-post), .ast-separate-container .error-404, .ast-separate-container .no-results, .single.ast-separate-container  .ast-author-meta, .ast-separate-container .related-posts-title-wrapper, .ast-separate-container .comments-count-wrapper, .ast-box-layout.ast-plain-container .site-content, .ast-padded-layout.ast-plain-container .site-content, .ast-separate-container .ast-archive-description{background-color:var(--ast-global-color-5);background-image:none;}}.ast-separate-container.ast-two-container #secondary .widget{background-image:none;}@media (max-width:921px){.ast-separate-container.ast-two-container #secondary .widget{background-color:var(--ast-global-color-5);background-image:none;}}@media (max-width:544px){.ast-separate-container.ast-two-container #secondary .widget{background-color:var(--ast-global-color-5);background-image:none;}}.ast-mobile-header-content > *,.ast-desktop-header-content > * {padding: 10px 0;height: auto;}.ast-mobile-header-content > *:first-child,.ast-desktop-header-content > *:first-child {padding-top: 10px;}.ast-mobile-header-content > .ast-builder-menu,.ast-desktop-header-content > .ast-builder-menu {padding-top: 0;}.ast-mobile-header-content > *:last-child,.ast-desktop-header-content > *:last-child {padding-bottom: 0;}.ast-mobile-header-content .ast-search-menu-icon.ast-inline-search label,.ast-desktop-header-content .ast-search-menu-icon.ast-inline-search label {width: 100%;}.ast-desktop-header-content .main-header-bar-navigation .ast-submenu-expanded > .ast-menu-toggle::before {transform: rotateX(180deg);}#ast-desktop-header .ast-desktop-header-content,.ast-mobile-header-content .ast-search-icon,.ast-desktop-header-content .ast-search-icon,.ast-mobile-header-wrap .ast-mobile-header-content,.ast-main-header-nav-open.ast-popup-nav-open .ast-mobile-header-wrap .ast-mobile-header-content,.ast-main-header-nav-open.ast-popup-nav-open .ast-desktop-header-content {display: none;}.ast-main-header-nav-open.ast-header-break-point #ast-desktop-header .ast-desktop-header-content,.ast-main-header-nav-open.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content {display: block;}.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up > .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up > .menu-item .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down > .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down > .menu-item .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-fade > .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-fade > .menu-item .menu-item > .sub-menu {opacity: 1;visibility: visible;}.ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation {width: unset;margin: unset;}.ast-mobile-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle,.ast-desktop-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle {left: calc( 20px - 0.907em);right: auto;}.ast-mobile-header-content .ast-search-menu-icon,.ast-mobile-header-content .ast-search-menu-icon.slide-search,.ast-desktop-header-content .ast-search-menu-icon,.ast-desktop-header-content .ast-search-menu-icon.slide-search {width: 100%;position: relative;display: block;right: auto;transform: none;}.ast-mobile-header-content .ast-search-menu-icon.slide-search .search-form,.ast-mobile-header-content .ast-search-menu-icon .search-form,.ast-desktop-header-content .ast-search-menu-icon.slide-search .search-form,.ast-desktop-header-content .ast-search-menu-icon .search-form {right: 0;visibility: visible;opacity: 1;position: relative;top: auto;transform: none;padding: 0;display: block;overflow: hidden;}.ast-mobile-header-content .ast-search-menu-icon.ast-inline-search .search-field,.ast-mobile-header-content .ast-search-menu-icon .search-field,.ast-desktop-header-content .ast-search-menu-icon.ast-inline-search .search-field,.ast-desktop-header-content .ast-search-menu-icon .search-field {width: 100%;padding-right: 5.5em;}.ast-mobile-header-content .ast-search-menu-icon .search-submit,.ast-desktop-header-content .ast-search-menu-icon .search-submit {display: block;position: absolute;height: 100%;top: 0;right: 0;padding: 0 1em;border-radius: 0;}.ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation ul .sub-menu .menu-link {padding-left: 30px;}.ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation .sub-menu .menu-item .menu-item .menu-link {padding-left: 40px;}.ast-mobile-popup-drawer.active .ast-mobile-popup-inner{background-color:#ffffff;;}.ast-mobile-header-wrap .ast-mobile-header-content, .ast-desktop-header-content{background-color:#ffffff;;}.ast-mobile-popup-content > *, .ast-mobile-header-content > *, .ast-desktop-popup-content > *, .ast-desktop-header-content > *{padding-top:0px;padding-bottom:0px;}.content-align-flex-start .ast-builder-layout-element{justify-content:flex-start;}.content-align-flex-start .main-header-menu{text-align:left;}.ast-mobile-popup-drawer.active .menu-toggle-close{color:#3a3a3a;}.ast-mobile-header-wrap .ast-primary-header-bar,.ast-primary-header-bar .site-primary-header-wrap{min-height:70px;}.ast-desktop:not(:has(.ast-header-sticked)) .ast-primary-header-bar .main-header-menu > .menu-item{line-height:70px;}.ast-header-break-point #masthead .ast-mobile-header-wrap .ast-primary-header-bar,.ast-header-break-point #masthead .ast-mobile-header-wrap .ast-below-header-bar,.ast-header-break-point #masthead .ast-mobile-header-wrap .ast-above-header-bar{padding-left:20px;padding-right:20px;}.ast-header-break-point .ast-primary-header-bar{border-bottom-width:0px;border-bottom-color:#eaeaea;border-bottom-style:solid;}@media (min-width:922px){.ast-primary-header-bar{border-bottom-width:0px;border-bottom-color:#eaeaea;border-bottom-style:solid;}}.ast-primary-header-bar{background-color:rgba(255,255,255,0);background-image:none;}.ast-desktop .ast-primary-header-bar.main-header-bar, .ast-header-break-point #masthead .ast-primary-header-bar.main-header-bar{padding-top:0px;}.ast-primary-header-bar{display:block;}@media (max-width:921.99px){.ast-header-break-point .ast-primary-header-bar{display:grid;}}@media (max-width:544px){.ast-header-break-point .ast-primary-header-bar{display:grid;}}[data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal{color:var(--ast-global-color-0);border:none;background:transparent;}[data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-toggle-icon .ast-mobile-svg{width:20px;height:20px;fill:var(--ast-global-color-0);}[data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-wrap .mobile-menu{color:var(--ast-global-color-0);}.ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}.ast-builder-menu-mobile .main-navigation .menu-item-has-children > .menu-link:after{content:unset;}.ast-hfb-header .ast-builder-menu-mobile .main-header-menu, .ast-hfb-header .ast-builder-menu-mobile .main-navigation .menu-item .menu-link, .ast-hfb-header .ast-builder-menu-mobile .main-navigation .menu-item .sub-menu .menu-link{border-style:none;}.ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}@media (max-width:921px){.ast-builder-menu-mobile .main-navigation .main-header-menu .menu-item > .menu-link{color:var(--ast-global-color-2);}.ast-builder-menu-mobile .main-navigation .main-header-menu .menu-item > .ast-menu-toggle{color:var(--ast-global-color-2);}.ast-builder-menu-mobile .main-navigation .menu-link:hover, .ast-builder-menu-mobile .main-navigation .main-header-menu > .menu-item:hover > .menu-link, .ast-builder-menu-mobile .main-navigation .inline-on-mobile .ast-menu-toggle:hover, .ast-builder-menu-mobile .main-navigation .inline-on-mobile .main-header-menu > .menu-item:hover > .ast-menu-toggle{color:var(--ast-global-color-0);}.ast-builder-menu-mobile .main-navigation .ast-menu-toggle:hover, .ast-builder-menu-mobile .main-navigation .main-header-menu > .menu-item:hover > .ast-menu-toggle{color:var(--ast-global-color-0);}.ast-builder-menu-mobile .main-navigation .menu-item.current-menu-item > .menu-link, .ast-builder-menu-mobile .main-navigation .inline-on-mobile .menu-item.current-menu-item > .ast-menu-toggle, .ast-builder-menu-mobile .main-navigation .menu-item.current-menu-ancestor > .menu-link, .ast-builder-menu-mobile .main-navigation .menu-item.current-menu-ancestor > .ast-menu-toggle{color:var(--ast-global-color-0);}.ast-builder-menu-mobile .main-navigation .menu-item.current-menu-item > .ast-menu-toggle{color:var(--ast-global-color-0);}.ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}.ast-builder-menu-mobile .main-navigation .menu-item-has-children > .menu-link:after{content:unset;}.ast-builder-menu-mobile .main-navigation .main-header-menu , .ast-builder-menu-mobile .main-navigation .main-header-menu .menu-link, .ast-builder-menu-mobile .main-navigation .main-header-menu .sub-menu{background-color:var(--ast-global-color-5);background-image:none;}}@media (max-width:544px){.ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}}.ast-builder-menu-mobile .main-navigation{display:block;}@media (max-width:921.99px){.ast-header-break-point .ast-builder-menu-mobile .main-navigation{display:block;}}@media (max-width:544px){.ast-header-break-point .ast-builder-menu-mobile .main-navigation{display:block;}}:root{--e-global-color-astglobalcolor0:#ec5b53;--e-global-color-astglobalcolor1:#cf332b;--e-global-color-astglobalcolor2:#002d5b;--e-global-color-astglobalcolor3:#35373a;--e-global-color-astglobalcolor4:#fefafa;--e-global-color-astglobalcolor5:#ffffff;--e-global-color-astglobalcolor6:#F2F5F7;--e-global-color-astglobalcolor7:#35373a;--e-global-color-astglobalcolor8:#002d5b;}
 /*# sourceURL=astra-theme-css-inline-css */
@@ -47,19 +297,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 /*# sourceURL=global-styles-inline-css */
 </style>
-<link rel='stylesheet' id='elementor-frontend-css' href='../wp-content/plugins/elementor/assets/css/frontend.mineda1.css?ver=4.1.4' media='all' />
-<link rel='stylesheet' id='elementor-post-920-css' href='../wp-content/uploads/elementor/css/post-9203a1b.css?ver=1782899181' media='all' />
-<link rel='stylesheet' id='widget-image-css' href='../wp-content/plugins/elementor/assets/css/widget-image.mineda1.css?ver=4.1.4' media='all' />
-<link rel='stylesheet' id='widget-heading-css' href='../wp-content/plugins/elementor/assets/css/widget-heading.mineda1.css?ver=4.1.4' media='all' />
-<link rel='stylesheet' id='elementor-post-1725-css' href='../wp-content/uploads/elementor/css/post-1725f4ca.css?ver=1782919842' media='all' />
-<link rel='stylesheet' id='elementor-gf-local-roboto-css' href='../wp-content/uploads/elementor/google-fonts/css/robotoa229.css?ver=1744137968' media='all' />
-<link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='../wp-content/uploads/elementor/google-fonts/css/robotoslabed9b.css?ver=1744137973' media='all' />
-<script id="jquery-core-js" src="../wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1"></script>
-<script id="jquery-migrate-js" src="../wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"></script>
-<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/1725.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.html?rsd" />
+<link rel='stylesheet' id='elementor-frontend-css' href='../../wp-content/plugins/elementor/assets/css/frontend.mineda1.css?ver=4.1.4' media='all' />
+<link rel='stylesheet' id='elementor-post-920-css' href='../../wp-content/uploads/elementor/css/post-9203a1b.css?ver=1782899181' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='../../wp-content/plugins/elementor/assets/css/widget-heading.mineda1.css?ver=4.1.4' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='../../wp-content/plugins/elementor/assets/css/widget-image.mineda1.css?ver=4.1.4' media='all' />
+<link rel='stylesheet' id='widget-spacer-css' href='../../wp-content/plugins/elementor/assets/css/widget-spacer.mineda1.css?ver=4.1.4' media='all' />
+<link rel='stylesheet' id='elementor-post-1873-css' href='../../wp-content/uploads/elementor/css/post-18730299.css?ver=1782919862' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-roboto-css' href='../../wp-content/uploads/elementor/google-fonts/css/robotoa229.css?ver=1744137968' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='../../wp-content/uploads/elementor/google-fonts/css/robotoslabed9b.css?ver=1744137973' media='all' />
+<script id="jquery-core-js" src="../../wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="../../wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="../../wp-json/index.html" /><link rel="alternate" title="JSON" type="application/json" href="../../wp-json/wp/v2/pages/1873.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc0db0.html?rsd" />
 <meta name="generator" content="WordPress 7.0" />
 <link rel="canonical" href="index.html" />
-<link rel='shortlink' href='../index6d4c.html?p=1725' />
+<link rel='shortlink' href='../../index9bac.html?p=1873' />
 <meta name="generator" content="Elementor 4.1.4; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
 <style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>			<style>
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
@@ -85,11 +336,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </style>
 </head>
 
-<body itemtype='https://schema.org/WebPage' itemscope='itemscope' class="wp-singular page-template-default page page-id-1725 page-parent wp-embed-responsive wp-theme-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.5 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-920 elementor-page elementor-page-1725">
+<body itemtype='https://schema.org/WebPage' itemscope='itemscope' class="wp-singular page-template-default page page-id-1873 page-child parent-pageid-1725 wp-embed-responsive wp-theme-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.5 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-920 elementor-page elementor-page-1873">
 			<script>
 			(function(){if(window.matchMedia('(max-width:921.99px)').matches){document.body.classList.add('ast-header-break-point');document.body.classList.remove('ast-desktop');}})();
 			</script>
-
+			
 <a
 	class="skip-link screen-reader-text"
 	href="#content">
@@ -110,34 +361,34 @@ class="hfeed site" id="page">
 				class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope"				>
 					<div class="ast-site-title-wrap">
 						<span class="site-title" itemprop="name">
-				<a href="../index.html" rel="home" itemprop="url" >
+				<a href="../../index.html" rel="home" itemprop="url" >
 					BioCoM SR Lab
 				</a>
 			</span>
-
+						
 				</div>				</div>
 			<!-- .site-branding -->
 					</div>
 								</div>
 																								<div class="site-header-primary-section-right site-header-section ast-flex ast-grid-right-section">
 										<div class="ast-builder-menu-1 ast-builder-menu ast-flex ast-builder-menu-1-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-hb-menu-1">
-			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="primary-site-navigation-desktop" aria-label="Primary Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation ast-inline-flex"><ul id="ast-hf-menu-1" class="main-header-menu ast-menu-shadow ast-nav-menu ast-flex  submenu-with-border stack-on-mobile"><li id="menu-item-1735" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1725 current_page_item menu-item-1735"><a href="index.html" aria-current="page" class="menu-link">Research</a></li>
-<li id="menu-item-1733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1733"><a href="../publications/index.html" class="menu-link">Publications</a></li>
-<li id="menu-item-2087" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2087"><a aria-expanded="false" href="../team/index.html" class="menu-link">Team<span role="button" class="dropdown-menu-toggle ast-header-navigation-arrow" tabindex="0" aria-expanded="false" aria-label="Menu Toggle" aria-haspopup="true"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="primary-site-navigation-desktop" aria-label="Primary Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation ast-inline-flex"><ul id="ast-hf-menu-1" class="main-header-menu ast-menu-shadow ast-nav-menu ast-flex  submenu-with-border stack-on-mobile"><li id="menu-item-1735" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-1735"><a href="../index.html" class="menu-link">Research</a></li>
+<li id="menu-item-1733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1733"><a href="../../publications/index.html" class="menu-link">Publications</a></li>
+<li id="menu-item-2087" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2087"><a aria-expanded="false" href="../../team/index.html" class="menu-link">Team<span role="button" class="dropdown-menu-toggle ast-header-navigation-arrow" tabindex="0" aria-expanded="false" aria-label="Menu Toggle" aria-haspopup="true"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
                 </svg></span></span></a><button class="ast-menu-toggle" aria-expanded="false" aria-label="Toggle Menu"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
                 </svg></span></button>
 <ul class="sub-menu">
-	<li id="menu-item-1754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1754"><a href="../team/openings/index.html" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+	<li id="menu-item-1754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1754"><a href="../../team/openings/index.html" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
                 </svg></span>Openings</a></li>
 </ul>
 </li>
-<li id="menu-item-3079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3079"><a href="../fun/index.html" class="menu-link">gallery</a></li>
-<li id="menu-item-1828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1828"><a href="../news/index.html" class="menu-link">News</a></li>
-<li id="menu-item-2769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2769"><a href="../funding-donate/index.html" class="menu-link">Funding</a></li>
-<li id="menu-item-1755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1755"><a href="../contact-2/index.html" class="menu-link">Contact</a></li>
+<li id="menu-item-3079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3079"><a href="../../fun/index.html" class="menu-link">Gallery</a></li>
+<li id="menu-item-1828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1828"><a href="../../news/index.html" class="menu-link">News</a></li>
+<li id="menu-item-2769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2769"><a href="../../funding-donate/index.html" class="menu-link">Funding</a></li>
+<li id="menu-item-1755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1755"><a href="../../contact-2/index.html" class="menu-link">Contact</a></li>
 </ul></div></nav></div></div>		</div>
 									</div>
 												</div>
@@ -155,11 +406,11 @@ class="hfeed site" id="page">
 				class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope"				>
 					<div class="ast-site-title-wrap">
 						<span class="site-title" itemprop="name">
-				<a href="../index.html" rel="home" itemprop="url" >
+				<a href="../../index.html" rel="home" itemprop="url" >
 					BioCoM SR Lab
 				</a>
 			</span>
-
+						
 				</div>				</div>
 			<!-- .site-branding -->
 					</div>
@@ -184,556 +435,249 @@ class="hfeed site" id="page">
 	</div>
 				<div class="ast-mobile-header-content content-align-flex-start ">
 						<div class="ast-builder-menu-mobile ast-builder-menu ast-builder-menu-mobile-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-header-mobile-menu">
-			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="ast-mobile-site-navigation" aria-label="Site Navigation: Main menu" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation"><ul id="ast-hf-mobile-menu" class="main-header-menu ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1725 current_page_item menu-item-1735"><a href="index.html" aria-current="page" class="menu-link">Research</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1733"><a href="../publications/index.html" class="menu-link">Publications</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2087"><a aria-expanded="false" href="../team/index.html" class="menu-link">Team<span role="button" class="dropdown-menu-toggle ast-header-navigation-arrow" tabindex="0" aria-expanded="false" aria-label="Menu Toggle" aria-haspopup="true"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="ast-mobile-site-navigation" aria-label="Site Navigation: Main menu" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation"><ul id="ast-hf-mobile-menu" class="main-header-menu ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-1735"><a href="../index.html" class="menu-link">Research</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1733"><a href="../../publications/index.html" class="menu-link">Publications</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2087"><a aria-expanded="false" href="../../team/index.html" class="menu-link">Team<span role="button" class="dropdown-menu-toggle ast-header-navigation-arrow" tabindex="0" aria-expanded="false" aria-label="Menu Toggle" aria-haspopup="true"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
                 </svg></span></span></a><button class="ast-menu-toggle" aria-expanded="false" aria-label="Toggle Menu"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
                 </svg></span></button>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1754"><a href="../team/openings/index.html" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1754"><a href="../../team/openings/index.html" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
                 </svg></span>Openings</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3079"><a href="../fun/index.html" class="menu-link">gallery</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1828"><a href="../news/index.html" class="menu-link">News</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2769"><a href="../funding-donate/index.html" class="menu-link">Funding</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1755"><a href="../contact-2/index.html" class="menu-link">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3079"><a href="../../fun/index.html" class="menu-link">Gallery</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1828"><a href="../../news/index.html" class="menu-link">News</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2769"><a href="../../funding-donate/index.html" class="menu-link">Funding</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1755"><a href="../../contact-2/index.html" class="menu-link">Contact</a></li>
 </ul></div></nav></div></div>		</div>
 					</div>
 			</div>
 		</header><!-- #masthead -->
 			<div id="content" class="site-content">
 		<div class="ast-container">
-
+		
 
 	<div id="primary" class="content-area primary">
 
-
+		
 					<main id="main" class="site-main">
 				<article
-class="post-1725 page type-page status-publish ast-article-single" id="post-1725" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
-
+class="post-1873 page type-page status-publish ast-article-single" id="post-1873" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+	
 				<header class="entry-header ast-no-title ast-header-without-markup">
 							</header> <!-- .entry-header -->
-
+		
 <div class="entry-content clear"
-	itemprop="text">
+	itemprop="text" style="background-color: lightgray; border: 1px solid var(--border-subtle);">
+
+	
+			<div data-elementor-type="wp-page" data-elementor-id="1873" class="elementor elementor-1873">
+				<div class="elementor-element elementor-element-ed812dd e-flex e-con-boxed e-con e-parent" data-id="ed812dd" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-ec8e852 e-con-full e-flex e-con e-child" data-id="ec8e852" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-db41694 elementor-widget elementor-widget-heading" data-id="db41694" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><u>Research Proposal Submission</u></h2>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<div class="form-page-wrapper" style="background-color: lightblue; border: 1px solid var(--border-subtle);">
+        <div class="form-heading-block" >
+       
+            <p>The BioCoM SR Lab welcomes innovative ideas and collaborative research initiatives. Prospective researchers and students are invited to submit an independent project draft that explores new horizons within our core domains, or apply directly to align with an existing lab framework. Please use the submission panel below to upload your formal proposal and academic CV for comprehensive structural review by the PI.</p>
+			
+        </div>
+
+        <!-- Update Action attribute with your verified API handler URL (Formspree/Getform/etc) -->
+        <form class="proposal-form-card" action="https://forminit.com/f/9vwwbckcz5h" method="POST" enctype="multipart/form-data">
+            
+            <div class="form-row-group">
+                <div class="form-field-block">
+                    <label for="applicant-name">Full Name *</label>
+                    <input type="text" id="applicant-name" name="fi-sender-fullName" required placeholder="John Doe">
+                </div>
+                <div class="form-field-block">
+                    <label for="applicant-email">Email Address *</label>
+                    <input type="email" id="applicant-email" name="fi-sender-email" required placeholder="johndoe@institution.edu">
+                </div>
+            </div>
+
+            <div class="form-row-group">
+                <div class="form-field-block">
+                    <label for="institution">Current Institution / Affiliation *</label>
+                    <input type="text" id="institution" name="fi-text-institution" required placeholder="University name">
+                </div>
+                <div class="form-field-block">
+                    <label for="academic-position">Current Position / Role *</label>
+                    <select id="academic-position" name="fi-select-position" required>
+                        <option value="" disabled selected>Select your current profile</option>
+                        <option value="Undergraduate">Undergraduate Student</option>
+                        <option value="Master">Master's Student</option>
+                        <option value="PhD">PhD Candidate</option>
+                        <option value="PostDoc">Postdoctoral Researcher</option>
+                        <option value="External Collaborator">External Collaborator</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row-group">
+                <div class="form-field-block">
+                    <label for="pillar-alignment">Primary Research Pillar Alignment *</label>
+                    <select id="pillar-alignment" name="fi-select-pillar" required>
+                        <option value="" disabled selected>Select a primary lab area</option>
+                        <option value="AI in Medicine">AI and Computational Intelligence in Medicine</option>
+                        <option value="Tumor Microenvironment">Tumor Microenvironment, Single-Cell and Spatial Omics</option>
+                        <option value="Computational Oncology">Computational Oncology and Therapeutic Drug Response</option>
+                        <option value="Bioinformatics">Bioinformatics and Computational Biology</option>
+                        <option value="Health Informatics">Health Informatics and System Modeling</option>
+                    </select>
+                </div>
+                <div class="form-field-block">
+                    <label for="project-alignment">Specific Ongoing Project Code (Optional)</label>
+                    <select id="project-alignment" name="fi-select-projectCode">
+                        <option value="Independent Proposal">Independent Proposal (Not tied to active pipeline)</option>
+                        <option value="BioCoM-P1">BioCoM-P1 (Neuro-Symbolic Liquid Biopsies)</option>
+                        <option value="BioCoM-P2">BioCoM-P2 (Cross-Modal Contrastive Learning)</option>
+                        <option value="BioCoM-P3">BioCoM-P3 (Single-Cell Transcriptomics ML)</option>
+                        <option value="BioCoM-P4">BioCoM-P4 (Spatial Image & scRNA Mapping)</option>
+                        <option value="BioCoM-P5">BioCoM-P5 (Cross-Domain Drug Response)</option>
+                        <option value="BioCoM-P6">BioCoM-P6 (Multimodal Early Detection Architecture)</option>
+                        <option value="BioCoM-P7">BioCoM-P7 (Spatial Microenvironment Review)</option>
+                        <option value="BioCoM-P8">BioCoM-P8 (Pan-Cancer Universal Signatures)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-field-block full-width">
+                <label for="proposal-abstract">Brief Executive Abstract *</label>
+                <textarea id="proposal-abstract" name="fi-text-abstract" rows="4" required placeholder="Provide a summary statement outlining your objectives..."></textarea>
+            </div>
+
+            <div class="form-field-block full-width">
+                <label>Upload Complete Research Proposal Draft *</label>
+                <div class="file-upload-wrapper" onclick="document.getElementById('proposal-file').click();">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <div><strong>Click to upload your Proposal document</strong></div>
+                    <div class="file-spec-notice">Accepted formats: PDF only (Max size: 10MB)</div>
+                    <input type="file" id="proposal-file" name="fi-file-proposal" accept=".pdf" required onchange="displayFileName(this, 'proposal-name-display')">
+                    <div id="proposal-name-display" class="file-selected-name"></div>
+                </div>
+            </div>
+
+            <div class="form-field-block full-width">
+                <label>Upload Academic CV / Curriculum Vitae *</label>
+                <div class="file-upload-wrapper" onclick="document.getElementById('cv-file').click();">
+                    <i class="fa-solid fa-address-card"></i>
+                    <div><strong>Click to upload your Academic CV</strong></div>
+                    <div class="file-spec-notice">Accepted formats: PDF only (Max size: 5MB)</div>
+                    <input type="file" id="cv-file" name="fi-file-cv" accept=".pdf" required onchange="displayFileName(this, 'cv-name-display')">
+                    <div id="cv-name-display" class="file-selected-name"></div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-form-btn">
+                <i class="fa-solid fa-paper-plane"></i> Submit Application to Review
+            </button>
+        </form>
+    </div>
+
+    <script>
+        // Utility script to give visual validation feedback when files are staged
+        function displayFileName(inputElement, targetDisplayId) {
+            const displayElement = document.getElementById(targetDisplayId);
+            if (inputElement.files && inputElement.files.length > 0) {
+                displayElement.innerHTML = `<i class="fa-solid fa-check-circle"></i> Staged File: ${inputElement.files[0].name}`;
+            } else {
+                displayElement.innerHTML = '';
+            }
+        }
+    </script>
+				
+				
+				
+				
+	
+	
+				
+				
+				
+				
+		
+        
 
 
-			<div data-elementor-type="wp-page" data-elementor-id="1725" class="elementor elementor-1725">
-				<div class="elementor-element elementor-element-397f823 e-con-full e-flex e-con e-parent" data-id="397f823" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-deb507f e-con-full e-flex e-con e-child" data-id="deb507f" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-94f7c4e elementor-widget elementor-widget-image" data-id="94f7c4e" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img decoding="async" src="../wp-content/uploads/elementor/thumbs/earlyCancer.png" title="Early Cancer Detection and Liquid Biopsy" alt="Early Cancer Detection and Liquid Biopsy" loading="lazy" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-b1ed45f elementor-widget elementor-widget-heading" data-id="b1ed45f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h6 class="elementor-heading-title elementor-size-default"><a href="early-cancer/index.html"><u>Early Cancer Detection and Liquid Biopsy</u></a></h6>				</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-f95e2ec e-con-full e-flex e-con e-child" data-id="f95e2ec" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e182b06 elementor-widget elementor-widget-image" data-id="e182b06" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img decoding="async" src="../wp-content/uploads/elementor/thumbs/TumorMicroenv.png" title="spatial-oncology" alt="spatial-oncology" loading="lazy" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-4461e8b elementor-widget elementor-widget-heading" data-id="4461e8b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h6 class="elementor-heading-title elementor-size-default"><a href="spatial-oncology/index.html"><u>Tumor Microenvironment, Single-Cell and Spatial Omics</u></a></h6>				</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-c649171 e-con-full e-flex e-con e-child" data-id="c649171" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-4396d71 elementor-widget elementor-widget-image" data-id="4396d71" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img decoding="async" src="../wp-content/uploads/elementor/thumbs/com-oncology.png" title="Computational Oncology and Drug Response Prediction" alt="Computational Oncology and Drug Response Prediction" loading="lazy" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-d45e5aa elementor-widget elementor-widget-heading" data-id="d45e5aa" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h6 class="elementor-heading-title elementor-size-default"><a href="com-oncology-therapeutic-drug/index.html"><u>Computational Oncology and Drug Response Prediction</u></a></h6>				</div>
-				</div>
-				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 
-				<div class="elementor-element elementor-element-f95e2ec e-con-full e-flex e-con e-child" data-id="f95e2ec" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e182b06 elementor-widget elementor-widget-image" data-id="e182b06" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				
+				
+				
+				
+				
+				
+				
+		
+		
+		<div class="elementor-element elementor-element-3840471 e-flex e-con-boxed e-con e-parent" data-id="3840471" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-bb45ec4 elementor-widget elementor-widget-spacer" data-id="bb45ec4" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" src="../wp-content/uploads/elementor/thumbs/Bioinfo.png" title="Bioinformatics and Computational Biology" alt="Bioinformatics and Computational Biology" loading="lazy" />															</div>
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
 				</div>
-				<div class="elementor-element elementor-element-4461e8b elementor-widget elementor-widget-heading" data-id="4461e8b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h6 class="elementor-heading-title elementor-size-default"><a href="bioinfo/index.html"><u>Bioinformatics and Computational Biology</u></a></h6>				</div>
-				</div>
-				</div>
-
-				<div class="elementor-element elementor-element-f95e2ec e-con-full e-flex e-con e-child" data-id="f95e2ec" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e182b06 elementor-widget elementor-widget-image" data-id="e182b06" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img decoding="async" src="../wp-content/uploads/elementor/thumbs/AI_and_Com.png" title="spatial-oncology" alt="spatial-oncology" loading="lazy" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-4461e8b elementor-widget elementor-widget-heading" data-id="4461e8b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h6 class="elementor-heading-title elementor-size-default"><a href="AI-com-med/index.html"><u>Artificial Intelligence and Computational Intelligence in Medicine</u></a></h6>				</div>
+					</div>
 				</div>
 				</div>
-
-
-				</div>
-				</div>
-
-
-
+		
+	
+	
 </div><!-- .entry-content .clear -->
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- ==================== ONGOING LAB PROJECTS SECTION ==================== -->
-        <style>
-            .projects-section-header {
-                margin: 5rem 0 2rem 0;
-                border-bottom: 2px solid var(--border-subtle, #e2e8f0);
-                padding-bottom: 0.75rem;
-            }
-
-            .projects-section-header h2 {
-                font-size: 1.85rem;
-                font-weight: 700;
-                color: var(--primary-accent, #0f172a);
-                letter-spacing: -0.5px;
-            }
-
-            .projects-list-container {
-                display: flex;
-                flex-direction: column;
-                gap: 1.5rem;
-                margin-bottom: 5rem;
-            }
-
-            /* --- Screen-Independent Project Card --- */
-            .project-list-card {
-                background: var(--bg-card, #ffffff);
-                border: 1px solid var(--border-subtle, #e2e8f0);
-                border-radius: 12px;
-                padding: 1.75rem;
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                transition: all 0.25s ease;
-            }
-
-            .project-list-card:hover {
-                transform: translateX(4px);
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-                border-color: #cbd5e1;
-            }
-
-            /* --- Upper Metadata Flex Row --- */
-            .project-meta-top {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-                gap: 0.75rem;
-            }
-
-            .project-badge-group {
-                display: flex;
-                align-items: center;
-                gap: 0.75rem;
-                flex-wrap: wrap;
-            }
-
-            .project-id-badge {
-                font-size: 0.75rem;
-                font-weight: 700;
-                background: #f1f5f9;
-                color: #334155;
-                padding: 0.3rem 0.75rem;
-                border-radius: 6px;
-                border: 1px solid #cbd5e1;
-                letter-spacing: 0.5px;
-            }
-
-            /* Category Tag Colors matching the Core Lab Pillars */
-            .category-tag {
-                font-size: 0.72rem;
-                font-weight: 600;
-                padding: 0.3rem 0.75rem;
-                border-radius: 6px;
-                text-transform: uppercase;
-                letter-spacing: 0.3px;
-            }
-            .cat-ai { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
-            .cat-omics { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
-            .cat-oncology { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
-            .cat-bioinf { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
-
-            .project-duration {
-                font-size: 0.82rem;
-                color: #64748b;
-                font-weight: 500;
-                display: flex;
-                align-items: center;
-                gap: 0.4rem;
-            }
-
-            /* --- Titles and Descriptions --- */
-            .project-short-title {
-                font-size: 1.3rem;
-                font-weight: 700;
-                color: var(--secondary-accent, #2563eb);
-                margin-bottom: 0.4rem;
-            }
-
-            .project-description-text {
-                font-size: 0.88rem;
-                color: #334155;
-                line-height: 1.6;
-                background: #f8fafc;
-                padding: 1rem;
-                border-left: 3px solid #cbd5e1;
-                border-radius: 0 8px 8px 0;
-            }
-
-            .contact-notice {
-                font-weight: 600;
-                color: #b91c1c;
-            }
-
-            /* --- Lower Details Layout --- */
-            .project-meta-bottom {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 1.5rem;
-                padding-top: 0.75rem;
-                border-top: 1px dashed #e2e8f0;
-                font-size: 0.85rem;
-                color: #475569;
-            }
-
-            .meta-label {
-                font-weight: 600;
-                color: var(--primary-accent, #0f172a);
-            }
-
-            /* --- Responsive Mobile Overrides --- */
-            @media (max-width: 640px) {
-                .project-list-card {
-                    padding: 1.25rem;
-                }
-                .project-short-title {
-                    font-size: 1.15rem;
-                }
-                .project-meta-bottom {
-                    flex-direction: column;
-                    gap: 0.4rem;
-                }
-            }
-        </style>
-
-        <div class="projects-section-header">
-            <h2>Ongoing Lab Projects</h2>
-        </div>
-
-        <div class="projects-list-container">
-            <script>
-                const bioComProjects = [
-                    {
-                        id: "BioCoM-P1",
-                        shortTitle: "ENSymBRLNet Framework",
-                        category: "Artificial Intelligence and Computational Intelligence in Medicine",
-                        catClass: "cat-ai",
-                        description: "This project explores explainable computational intelligence frameworks applied to multi-modal liquid biopsy data channels. For deeper technical insights or collaboration parameters, please contact the PI directly.",
-                        leader: "PI Saifur Rahaman",
-                        supervisor: "",
-                        duration: "Jan 2026 - July 2026"
-                    },
-                    {
-                        id: "BioCoM-P2",
-                        shortTitle: "TOGA-CL Framework",
-                        category: "Bioinformatics and Computational Biology",
-                        catClass: "cat-bioinf",
-                        description: "Investigating the architectural integration of cell-free genomic and transcriptomic fragmentome signatures via contrastive algorithmic frameworks. Specific project models and diagnostic conclusions are confidential; contact the PI for details.",
-                        leader: "PI Saifur Rahaman",
-                        supervisor: "",
-                        duration: "Ongoing"
-                    },
-                    {
-                        id: "BioCoM-P3",
-                        shortTitle: "EarlyCancerDMLF Framework",
-                        category: "Tumor Microenvironment, Single-Cell and Spatial Omics",
-                        catClass: "cat-omics",
-                        description: "Focusing on the statistical implementation of hybrid machine learning pipelines processing single-cell transcriptomic data blocks. To protect current intellectual data, specific findings are withheld; contact the PI for inquiries.",
-                        leader: "PI Saifur Rahaman",
-                        supervisor: "",
-                        duration: "July 2026 - Present"
-                    },
-                    {
-                        id: "BioCoM-P4",
-                        shortTitle: "Spatial Image and scRNA Analysis [MGH Dataset]",
-                        category: "Tumor Microenvironment, Single-Cell and Spatial Omics",
-                        catClass: "cat-omics",
-                        description: "An evaluation of data-processing methods for combining high-resolution spatial image sets alongside single-cell sequencing matrices. Full experimental configurations require authorization; kindly reach out to the PI.",
-                        leader: "Nujmus Sajid (Lab Manager)",
-                        supervisor: "PI Saifur Rahaman",
-                        duration: "July 2026 - Present"
-                    },
-                    {
-                        id: "BioCoM-P5",
-                        shortTitle: "Cross-Domain Multimodal Modeling",
-                        category: "Computational Oncology and Therapeutic Drug Response",
-                        catClass: "cat-oncology",
-                        description: "A computational engineering baseline project analyzing cross-domain modeling strategies for multi-agent anticancer therapeutics. Core algorithmic pipelines and predictive results are restricted; contact the PI for information.",
-                        leader: "Undergraduate Students",
-                        supervisor: "PI Saifur Rahaman",
-                        duration: "Ongoing"
-                    },
-                    {
-                        id: "BioCoM-P6",
-                        shortTitle: "Multimodal Early Detection Pipeline",
-                        category: "Artificial Intelligence and Computational Intelligence in Medicine",
-                        catClass: "cat-ai",
-                        description: "Developing robust computational frameworks designed to harmonize heterogeneous multimodal analytical inputs. Detailed systemic methodologies and performance criteria are private; contact the PI for a deep-dive review.",
-                        leader: "PI Saifur Rahaman",
-                        supervisor: "",
-                        duration: "July 2026 - Present"
-                    },
-                    {
-                        id: "BioCoM-P7",
-                        shortTitle: "Spatial Single-Cell Informatics Review",
-                        category: "Computational Oncology and Therapeutic Drug Response",
-                        catClass: "cat-oncology",
-                        description: "A comprehensive systematic review compiling current international methodologies regarding spatial transcriptomic indexing workflows for tumor ecosystems. For literature taxonomy details, coordinate directly with the PI.",
-                        leader: "PI Saifur Rahaman",
-                        supervisor: "",
-                        duration: "July 2026 - Present"
-                    },
-                    {
-                        id: "BioCoM-P8",
-                        shortTitle: "PanCancer-BRL Framework",
-                        category: "Bioinformatics and Computational Biology",
-                        catClass: "cat-bioinf",
-                        description: "Researching large-scale foundation layout concepts to safely normalize global molecular traits from highly fragmented cohorts. The structural design framework remains under disclosure guard; contact the PI for verified inquiries.",
-                        leader: "PI Saifur Rahaman",
-                        supervisor: "",
-                        duration: "July 2026 - Present"
-                    }
-                ];
-
-                bioComProjects.forEach(project => {
-                    const supervisorElement = project.supervisor 
-                        ? `<div><span class="meta-label">Supervisor:</span> ${project.supervisor}</div>` 
-                        : '';
-
-                    document.write(`
-                        <div class="project-list-card">
-                            <div class="project-meta-top">
-                                <div class="project-badge-group">
-                                    <span class="project-id-badge">${project.id}</span>
-                                    <span class="category-tag ${project.catClass}">${project.category}</span>
-                                </div>
-                                <div class="project-duration">
-                                    <i class="fa-regular fa-calendar-days"></i> ${project.duration}
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="project-short-title">${project.shortTitle}</h3>
-                                <p class="project-description-text">
-                                    ${project.description} <span class="contact-notice">Please contact the PI for full details.</span>
-                                </p>
-                            </div>
-                            <div class="project-meta-bottom">
-                                <div><span class="meta-label">Project Leader:</span> ${project.leader}</div>
-                                ${supervisorElement}
-                            </div>
-                        </div>
-                    `);
-                });
-            </script>
-        </div>
-		
-		
-		
-		
-		
-		
-		<!-- ==================== COLLABORATION & CALL FOR PROPOSALS ==================== -->
-        <style>
-            .collaboration-container {
-                background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-                border: 1px solid #e2e8f0;
-                border-radius: 16px;
-                padding: 2.5rem;
-                margin-top: 4rem;
-                margin-bottom: 5rem;
-                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            }
-
-            .collaboration-content {
-                max-width: 800px;
-                margin: 0 auto;
-                text-align: center;
-            }
-
-            .collaboration-icon {
-                font-size: 2.5rem;
-                color: var(--secondary-accent, #2563eb);
-                margin-bottom: 1rem;
-            }
-
-            .collaboration-content h3 {
-                font-size: 1.6rem;
-                font-weight: 700;
-                color: var(--primary-accent, #0f172a);
-                margin-bottom: 1rem;
-                letter-spacing: -0.3px;
-            }
-
-            .collaboration-content p {
-                font-size: 0.95rem;
-                color: #475569;
-                line-height: 1.7;
-                margin-bottom: 1.5rem;
-            }
-
-            .pillar-list-inline {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 0.5rem;
-                margin: 1.5rem 0;
-            }
-
-            .pillar-pill {
-                background: #ffffff;
-                border: 1px solid #cbd5e1;
-                padding: 0.4rem 0.8rem;
-                border-radius: 8px;
-                font-size: 0.82rem;
-                font-weight: 500;
-                color: #334155;
-            }
-
-            /* --- Interactive Dynamic Action Button --- */
-            .proposal-btn {
-                display: inline-flex;
-                align-items: center;
-                gap: 0.5rem;
-                background: var(--secondary-accent, #2563eb);
-                color: #ffffff !important;
-                text-decoration: none !important;
-                font-weight: 600;
-                font-size: 0.95rem;
-                padding: 0.75rem 2rem;
-                border-radius: 8px;
-                box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-                transition: all 0.2s ease;
-            }
-
-            .proposal-btn:hover {
-                background: #1d4ed8;
-                transform: translateY(-2px);
-                box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
-            }
-
-            /* --- Responsive Adjustments --- */
-            @media (max-width: 640px) {
-                .collaboration-container {
-                    padding: 1.75rem 1.2rem;
-                    margin-top: 2.5rem;
-                }
-                .collaboration-content h3 {
-                    font-size: 1.35rem;
-                }
-                .collaboration-content p {
-                    font-size: 0.88rem;
-                }
-                .proposal-btn {
-                    width: 100%;
-                    justify-content: center;
-                }
-            }
-        </style>
-
-        <div class="collaboration-container">
-            <div class="collaboration-content">
-                <div class="collaboration-icon">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
-                <h3>Join Our Research Journey</h3>
-                <p>
-                    The <strong>BioCoM SR Lab</strong> is continuously seeking highly motivated prospective researchers, 
-                    postgraduate/undergraduate students, and global institutional collaborators to push the boundaries of computational medicine. 
-                    If you are interested in contributing to any of our active <strong>BioCoM pipelines</strong>, or if you possess an independent, 
-                    novel project proposal aligned with our five primary research pillars, we welcome your initiative.
-                </p>
-                
-                <p style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #64748b; margin-bottom: 0.5rem;">
-                    Core Alignment Core Domains
-                </p>
-                <div class="pillar-list-inline">
-                    <span class="pillar-pill">AI & Computational Intelligence</span>
-                    <span class="pillar-pill">Tumor Microenvironment & Spatial Omics</span>
-                    <span class="pillar-pill">Computational Oncology</span>
-                    <span class="pillar-pill">Bioinformatics & Computational Biology</span>
-                    <span class="pillar-pill">Health Informatics</span>
-                </div>
-
-                <p style="margin-top: 1.5rem;">
-                    Please prepare a brief summary statement or project brief outlining your background, specific research goals, and intended pipeline alignment, and submit your proposal directly to the PI for detailed verification and review.
-                </p>
-
-                <!-- Update the href value below with the PI's email address or contact portal path -->
-                <a href="proposal/index.html" class="proposal-btn">
-                    <i class="fa-solid fa-paper-plane"></i> Submit Proposal to PI
-                </a>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+	
 </article><!-- #post-## -->
 
 			</main><!-- #main -->
-
-
+			
+		
 	</div><!-- #primary -->
 
 
@@ -776,21 +720,21 @@ class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemsco
 var astra = {"break_point":"921","isRtl":"","is_scroll_to_id":"","is_scroll_to_top":"","is_header_footer_builder_active":"1","responsive_cart_click":"flyout","is_dark_palette":""};
 //# sourceURL=astra-theme-js-js-extra
 </script>
-<script id="astra-theme-js-js" src="../wp-content/themes/astra/assets/js/minified/frontend.min272c.js?ver=4.13.5"></script>
-<script id="wp-dom-ready-js" src="../wp-includes/js/dist/dom-ready.min379d.js?ver=a06281ae5cf5500e9317"></script>
+<script id="astra-theme-js-js" src="../../wp-content/themes/astra/assets/js/minified/frontend.min272c.js?ver=4.13.5"></script>
+<script id="wp-dom-ready-js" src="../../wp-includes/js/dist/dom-ready.min379d.js?ver=a06281ae5cf5500e9317"></script>
 <script id="starter-templates-zip-preview-js-extra">
 var starter_templates_zip_preview = {"AstColorPaletteVarPrefix":"--ast-global-color-","AstEleColorPaletteVarPrefix":["ast-global-color-0","ast-global-color-1","ast-global-color-2","ast-global-color-3","ast-global-color-4","ast-global-color-5","ast-global-color-6","ast-global-color-7","ast-global-color-8"]};
 //# sourceURL=starter-templates-zip-preview-js-extra
 </script>
-<script id="starter-templates-zip-preview-js" src="../wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main1006.js?ver=09382f635556bec359b3"></script>
-<script id="elementor-webpack-runtime-js" src="../wp-content/plugins/elementor/assets/js/webpack.runtime.mineda1.js?ver=4.1.4"></script>
-<script id="elementor-frontend-modules-js" src="../wp-content/plugins/elementor/assets/js/frontend-modules.mineda1.js?ver=4.1.4"></script>
-<script id="jquery-ui-core-js" src="../wp-includes/js/jquery/ui/core.minb37e.js?ver=1.13.3"></script>
+<script id="starter-templates-zip-preview-js" src="../../wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main1006.js?ver=09382f635556bec359b3"></script>
+<script id="elementor-webpack-runtime-js" src="../../wp-content/plugins/elementor/assets/js/webpack.runtime.mineda1.js?ver=4.1.4"></script>
+<script id="elementor-frontend-modules-js" src="../../wp-content/plugins/elementor/assets/js/frontend-modules.mineda1.js?ver=4.1.4"></script>
+<script id="jquery-ui-core-js" src="../../wp-includes/js/jquery/ui/core.minb37e.js?ver=1.13.3"></script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.1.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_panel_promotions":true,"nested-elements":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true},"urls":{"assets":"https:\/\/whwanglab.mgh.harvard.edu\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/whwanglab.mgh.harvard.edu\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/whwanglab.mgh.harvard.edu\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"c583fd0b43","atomicFormsSendForm":"3e1739b07e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1725,"title":"Research%20%E2%80%93%20William%20Hwang%20Lab","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.1.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_panel_promotions":true,"nested-elements":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true},"urls":{"assets":"https:\/\/whwanglab.mgh.harvard.edu\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/whwanglab.mgh.harvard.edu\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/whwanglab.mgh.harvard.edu\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"c583fd0b43","atomicFormsSendForm":"3e1739b07e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1873,"title":"spatial%20oncology%20%E2%80%93%20William%20Hwang%20Lab","excerpt":"","featuredImage":false}};
 //# sourceURL=elementor-frontend-js-before
 </script>
-<script id="elementor-frontend-js" src="../wp-content/plugins/elementor/assets/js/frontend.mineda1.js?ver=4.1.4"></script>
+<script id="elementor-frontend-js" src="../../wp-content/plugins/elementor/assets/js/frontend.mineda1.js?ver=4.1.4"></script>
 			<script>
 			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 			</script>
@@ -804,5 +748,5 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 </script>
 	</body>
 
-<!-- Mirrored from whwanglab.mgh.harvard.edu/research/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Jul 2026 18:20:33 GMT -->
+<!-- Mirrored from whwanglab.mgh.harvard.edu/research/spatial-oncology/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Jul 2026 18:23:52 GMT -->
 </html>
